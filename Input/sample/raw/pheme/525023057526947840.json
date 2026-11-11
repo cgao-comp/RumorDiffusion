@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "Canadian soldier fatally shot identified as Nathan Cirillo.  #OttawaShooting #HamOnt #RIP http://t.co/0VdtSF6WVS",
+        "user id": 91774878,
+        "tweet id": "525023057526947840",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "“@Media371: Canadian soldier fatally shot identified as Nathan Cirillo.  #OttawaShooting #HamOnt #RIP http://t.co/IkA3U4p6kS” RIP #hero #rip",
+            "user id": 54568578,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "@Media371 #heroinlifenotdeath",
+            "user id": 530923389,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "“@Media371: Canadian soldier fatally shot identified as Nathan Cirillo.  #OttawaShooting #HamOnt #RIP http://t.co/eF5v0VCaxR”",
+            "user id": 542132006,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 3,
+            "state_1": 0
+        }
+    }
+}

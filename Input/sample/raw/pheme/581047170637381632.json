@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "Names of pilots rumored to be Patrick Sonderheimer with co-pilot Andreas Lubitz - No formal confirmation yet. #germanwings",
+        "user id": 15037033,
+        "tweet id": "581047170637381632",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "@henkvaness Andreas Lubitz FB profile removed",
+            "user id": 97639418,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "@henkvaness Source of info?",
+            "user id": 281196193,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "@henkvaness where did you hear that?",
+            "user id": 232588404,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 0,
+            "state_1": 3
+        }
+    }
+}

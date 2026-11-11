@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "BREAKING: Smoke coming from building where Charlie Hebdo attack suspects located: Reuters reporter",
+        "user id": 1652541,
+        "tweet id": "553581668142153729",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "@Reuters Got bored, Play it!\nMost Boring\nhttps://t.co/z67RKu8P7b\nhttp://t.co/9OsIRDKID6",
+            "user id": 2560950470,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "“@Reuters: BREAKING: Smoke coming from building where Charlie Hebdo attack suspects located: Reuters reporter”",
+            "user id": 1307123292,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "RT @Reuters: BREAKING: Smoke coming from building where Charlie Hebdo attack suspects located: Reuters reporter",
+            "user id": 250393818,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 2,
+            "state_1": 1
+        }
+    }
+}

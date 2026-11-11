@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "#Germanwings Flight 9525 co-pilot crashed plane! My #Prayers go out to the families! http://t.co/9Ek6j6hnMS http://t.co/xj9awb6Trh",
+        "user id": 129964269,
+        "tweet id": "581248880098086912",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "@RealTonyRocha I'm praying that #God will reverse time and un-do this useless tragedy. He can do it and we'd never know! Pray for this!",
+            "user id": 18596522,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "@RealTonyRocha @xejylegemyfa We all feel that way god bless everyone involved!",
+            "user id": 3068138332,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "@RealTonyRocha  The terror in the 8 long minutes before the crash is incomprehensible. My greatest sympathies to all, God bless.",
+            "user id": 2451614138,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 2,
+            "state_1": 1
+        }
+    }
+}

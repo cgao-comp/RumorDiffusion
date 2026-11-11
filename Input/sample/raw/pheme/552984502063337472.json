@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "#UPDATE Three men including two brothers identified in France newspaper attack: source http://t.co/5NoNuqJSu1 #JeSuisCharlie #CharlieHebdo",
+        "user id": 380648579,
+        "tweet id": "552984502063337472",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "“@AFP: #UPDATE Three men including two brothers identified in France newspaper attack: source http://t.co/sXtqLIsrW4 #CharlieHebdo”",
+            "user id": 102452887,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "@AFP Protestamos com Arte também aqui no Brasil http://t.co/vz33IStpj6 #CharlieHebdo  http://t.co/eid1oMMmjb",
+            "user id": 579504493,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "@AFP Go to hell #CharlieHebdo",
+            "user id": 1150376528,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 2,
+            "state_1": 1
+        }
+    }
+}

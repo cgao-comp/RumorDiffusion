@@ -1,0 +1,55 @@
+{
+    "source": {
+        "content": "A Germanwings Airbus A320, flight #4U9525 BCN-DUS, crashed in southern France; 148 on board http://t.co/tUtpc26daX",
+        "user id": 18119570,
+        "tweet id": "580330721719508992",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [
+                1
+            ],
+            "content": "@AviationSafety can u confirm if it was a late plane change this morning to this aircraft",
+            "user id": 1721428045,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": 0,
+            "children": [],
+            "content": "@CrossMacro Don't know, sorry.",
+            "user id": 18119570,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 2
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "“@AviationSafety: A Germanwings Airbus A320, flight #4U9525 BCN-DUS, crashed in southern France; 148 on board http://t.co/G6akTbmCND”",
+            "user id": 263004997,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 2,
+            "state_1": 0
+        },
+        "2-hop": {
+            "state_0": 0,
+            "state_1": 1
+        }
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "source": {
+        "content": "UPDATE CRASH This is what we know about the Germanwings #4U9525 Airbus A320 plane crash so far http://t.co/Ah5H6qxIRp",
+        "user id": 2280470022,
+        "tweet id": "580329153553141760",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": ".@airlivenet: UPDATE CRASH This is what we know about the Germanwings #4U9525 Airbus A320 plane crash so far http://t.co/FEiBdIXlua.",
+            "user id": 248317578,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [
+                2
+            ],
+            "content": "@airlivenet strange conditions. Constant air speed, continuous track. Possible terrorism/hijack?",
+            "user id": 127632704,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": 1,
+            "children": [],
+            "content": "@sterion75 @airlivenet I agree. This one doesn't look like a normal emergency. I'd call it a hi-jacking.",
+            "user id": 139631790,
+            "user name": "",
+            "stance_label": 0,
+            "state": 1,
+            "hop": 2
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 1,
+            "state_1": 1
+        },
+        "2-hop": {
+            "state_0": 0,
+            "state_1": 1
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "Sydney cafe siege: Martin Place is in lockdown and surrounding buildings evacuated as a serious siege situation unfolds at the Lindt cafe.",
+        "user id": 156464691,
+        "tweet id": "544274585697280000",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "@7NewsSydney it's not right you have live footage of the hostages, exactly what the gunmen want. You're playing into their hands",
+            "user id": 6921192,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "@7NewsSydney I can't believe this world, people putting innocent people's lives at risk! Why? This world has lost it.",
+            "user id": 38372499,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "@7NewsSydney I hope children are not involved in this horrible situation in Martin Place.",
+            "user id": 1301317915,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 3,
+            "state_1": 0
+        }
+    }
+}

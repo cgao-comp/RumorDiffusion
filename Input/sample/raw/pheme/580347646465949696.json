@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "Our thoughts &amp; prayers are with the families and friends of @Germanwings #4U9525 passengers &amp; crew.",
+        "user id": 27067896,
+        "tweet id": "580347646465949696",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "@IATA @germanwings",
+            "user id": 1975339406,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "“@IATA: Our thoughts &amp; prayers are with the families and friends of @Germanwings #4U9525 passengers &amp; crew.” --- So are mine. Very sad day.",
+            "user id": 276662488,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "@IATA @germanwings You should change cockpit protocols: pilot/copilot leaves cockpit, Cabin Manager comes in, always two person in cockpit.",
+            "user id": 137637712,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 3,
+            "state_1": 0
+        }
+    }
+}

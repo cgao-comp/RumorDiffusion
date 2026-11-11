@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "Even for a hardened news man, today's mass shooting at #CharlieHebdo is ferociously shocking - writes @JonSnowC4 http://t.co/AcIzmQcx0a",
+        "user id": 180414031,
+        "tweet id": "552807071054184448",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "@Hayley_Barlow @jonsnowC4 rip x condolences to their families x friends",
+            "user id": 2899364175,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "@Hayley_Barlow @jonsnowC4 Pathetic to call THIS\" a landmark moment in the affairs of man.\"You mean western man.For others don't count...SAD!",
+            "user id": 1358771935,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "@Hayley_Barlow @jonsnowC4 I very upset with the deaths. perhaps not all freedom of speech is good? Some r very protective of their religion",
+            "user id": 66182408,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 3,
+            "state_1": 0
+        }
+    }
+}

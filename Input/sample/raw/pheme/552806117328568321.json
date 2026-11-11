@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "Paris is on the highest terrorist alert after 12 people were shot dead at the offices of a satirical weekly magazine. http://t.co/040PfC0If8",
+        "user id": 34713362,
+        "tweet id": "552806117328568321",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "@business I strongly condemn this terrorist attack as a TurkishMuslim.Terrorists Cannot represent Islam #notinmyname #NoToTerrorism",
+            "user id": 2464502209,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "@business for a magazine that had been WIDELY criticized of being overly pro Islam and anti israel",
+            "user id": 325234656,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "@uesugitakashi @Plutokun_Bot @takapon_jp “@business: Paris is on the highest terrorist alert after 12 people ..。http://t.co/JVrKOfgVPv”",
+            "user id": 290387782,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 2,
+            "state_1": 1
+        }
+    }
+}

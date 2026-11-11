@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "#CharlieHebdo The four Hero's of freedom of expression who were killed by terrorists in Paris. #ParisShooting http://t.co/rbZ4ZSyehB",
+        "user id": 1695784514,
+        "tweet id": "552846938677059586",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "@ivivekbansal @noconversion RIP the real true heroes of Earth !!",
+            "user id": 67470017,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "@ivivekbansal @FuckIsis_Canada The #world must show them what real #Terror is before western society is destroy! #Fuckislam #God #Bible",
+            "user id": 85184527,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "@ivivekbansal @JBrockm tragic ...but keep letting Muslims take over your country. France :(",
+            "user id": 6124022,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 2,
+            "state_1": 1
+        }
+    }
+}
