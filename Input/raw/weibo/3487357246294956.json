@@ -1,0 +1,82 @@
+{
+    "source": {
+        "content": "敢不敢，大家转起来！！！",
+        "user id": 2100761363,
+        "tweet id": "3487357246294956",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "转发微博",
+            "user id": 1277257700,
+            "user name": "小鱼呵呵一一",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "中国应该禁播日剧。支持！",
+            "user id": 2097544543,
+            "user name": "地道广州仁",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "不看",
+            "user id": 1846633804,
+            "user name": "文文是妈咪的小心肝",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 3,
+            "parent": -1,
+            "children": [],
+            "content": " @爱上汕头",
+            "user id": 1864263914,
+            "user name": "CATCHENT",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 4,
+            "parent": -1,
+            "children": [],
+            "content": "绝对绝对不去看[怒]",
+            "user id": 1881465884,
+            "user name": "亲亲de亲亲",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 5,
+            "parent": -1,
+            "children": [],
+            "content": "支持盗版",
+            "user id": 1801365337,
+            "user name": "w_麥伟鸿",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 5,
+            "state_1": 1
+        }
+    }
+}

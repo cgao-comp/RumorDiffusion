@@ -1,0 +1,60 @@
+{
+    "source": {
+        "content": "如果你不能陪我到最后 就不要半路进入我的生活 你知道 我可以习惯独自一人 但是我接受不了本来有人陪 突然就一个人了",
+        "user id": 2084348103,
+        "tweet id": "3909231033736573",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "[伤心][失望]",
+            "user id": 5593053047,
+            "user name": "苏蕊s3",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "是",
+            "user id": 5754414351,
+            "user name": "王小姐Q",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "Repost",
+            "user id": 5542111161,
+            "user name": "-丽丽哒",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 3,
+            "parent": -1,
+            "children": [],
+            "content": "同意",
+            "user id": 5745969881,
+            "user name": "wyn---123456",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 4,
+            "state_1": 0
+        }
+    }
+}

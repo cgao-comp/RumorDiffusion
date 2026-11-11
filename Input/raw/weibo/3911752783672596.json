@@ -1,0 +1,71 @@
+{
+    "source": {
+        "content": "【简单的补气血食疗方法】1．红枣10粒切开，枸杞子10粒，煮水喝，补血补肾，治腰膝酸软，长年吃，有养颜祛斑的作用；2．红枣在铁锅里炒黑后泡水喝，可以治疗胃寒，胃痛，再放入桂圆，就是补血，补气的茶了；3．红枣，花生，桂圆，红塘，加水在锅里地炖，炖得烂，长期吃补血的效果很好。",
+        "user id": 5357670210,
+        "tweet id": "3911752783672596",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "[good]a[哆啦A梦微笑][哆啦A梦微笑][哆啦A梦微笑]",
+            "user id": 3580092231,
+            "user name": "钟情于猫",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "备着以后做",
+            "user id": 5766184471,
+            "user name": "尽显逗比气质的包子",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "get",
+            "user id": 5702604874,
+            "user name": "妞妞的状态",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 3,
+            "parent": -1,
+            "children": [],
+            "content": "女性朋友们，等什么呢！福利",
+            "user id": 5312790444,
+            "user name": "AME258",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 4,
+            "parent": -1,
+            "children": [],
+            "content": "我总是气血不好，这能补[疑问]",
+            "user id": 5758670588,
+            "user name": "禾禾恩典",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 5,
+            "state_1": 0
+        }
+    }
+}

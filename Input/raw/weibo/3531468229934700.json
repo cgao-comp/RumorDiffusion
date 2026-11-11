@@ -1,0 +1,71 @@
+{
+    "source": {
+        "content": "四川藏区需要4一10岁小孩的衣服和鞋子，新旧不限，洗干净就可以。地址：四川省甘孜藏族石渠县西区长沙贡马乡小学， 邮编：627350 校长：达洼15884044467 如果没有合适的衣服可以邮寄的，帮忙转一下贴也好，也许您的一下简单复制，就能给孩子们一个幸福的明天！～～[爱心传递] http://t.cn/zjtC8m5",
+        "user id": 1730715417,
+        "tweet id": "3531468229934700",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "转发微博",
+            "user id": 1851405645,
+            "user name": "半岛不是岛",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "转发",
+            "user id": 3179918862,
+            "user name": "Kisssky狮子",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "转发微博。",
+            "user id": 2515981452,
+            "user name": "just-six",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 3,
+            "parent": -1,
+            "children": [],
+            "content": "一切都会好的！",
+            "user id": 3221325645,
+            "user name": "TheOnly般般Girl",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 4,
+            "parent": -1,
+            "children": [],
+            "content": "公益",
+            "user id": 2610896925,
+            "user name": "碎月催清妹恼",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 5,
+            "state_1": 0
+        }
+    }
+}

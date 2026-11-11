@@ -1,0 +1,56 @@
+{
+    "source": {
+        "content": "小浪，你真的要开启#最近访客#功能了吗？那我以后怎么看女友、前女友、前前女友、女友的前男友、女友前男友的现女友、前女友的现男友、前前女友的暧昧对象、现女友的勾搭对象，以及那些我讨厌的人、讨厌我的人、我以前讨厌的人、我不愿关注却天天偷看的人。你妹啊！你告诉我怎么看？怎。么。看！ [哼]",
+        "user id": 2159886400,
+        "tweet id": "3558997363714404",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [
+                1,
+                2
+            ],
+            "content": "小浪，你真的要开启#最近访客#功能吗？[哼]",
+            "user id": 2949895402,
+            "user name": "上海热门全搜罗",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": 0,
+            "children": [],
+            "content": "小浪，你真的要开启#最近访客#功能吗？",
+            "user id": 2159507702,
+            "user name": "上海热门排行榜",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 2
+        },
+        {
+            "comment id": 2,
+            "parent": 0,
+            "children": [],
+            "content": "说出了心里心里心里心里话啊 我以后还怎么看我讨厌的人啊",
+            "user id": 3121150567,
+            "user name": "翅米胡蝶",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 2
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 1,
+            "state_1": 0
+        },
+        "2-hop": {
+            "state_0": 2,
+            "state_1": 0
+        }
+    }
+}

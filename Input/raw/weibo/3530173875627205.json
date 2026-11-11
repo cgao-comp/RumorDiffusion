@@ -1,0 +1,71 @@
+{
+    "source": {
+        "content": "新年才过两天，微博热点已有三出：1.黄灯惹争议。2.南方遭尺度。3.非洲牛郎门——“G点按摩”、“乌龙戏珠”……中石化女高官果然色冠五洲，连非洲牛郎也拜倒在她的石榴裙下，看来不光男性官员射速快，更有女性官员吸力强啊！@焦点联播 @杂谈五味 @晓玲有话说",
+        "user id": 1264782967,
+        "tweet id": "3530173875627205",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "这丫头有那么大权利[疑问]  重点是牛郎吧？",
+            "user id": 2637107385,
+            "user name": "gmavyp彻悟",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "乖乖，30亿，油价又要涨啦！",
+            "user id": 1918232635,
+            "user name": "yqs173",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "[哈哈]",
+            "user id": 2302708077,
+            "user name": "ZSY的阳关大道",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 3,
+            "parent": -1,
+            "children": [],
+            "content": "真开眼。",
+            "user id": 1432771492,
+            "user name": "简变不_三健客",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 4,
+            "parent": -1,
+            "children": [],
+            "content": "天朝男女平等",
+            "user id": 2845175290,
+            "user name": "西瓜8586",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 4,
+            "state_1": 1
+        }
+    }
+}

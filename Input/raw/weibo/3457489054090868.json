@@ -1,0 +1,137 @@
+{
+    "source": {
+        "content": "70岁阿伯靠卖自己种的菜为生。一个从执法车上下来的年轻人，讲都没讲就扇阿伯几巴掌并推倒地上。阿伯其实想同执法者讲，据说阿伯从山上踩3个多钟头烂单车来只是想卖点钱帮生病的老伴买药！！！此时此刻请不要吝啬你的转发！！！有良知的请为阿伯转一下，替阿伯夺回公道！！！[怒]",
+        "user id": 2244566892,
+        "tweet id": "3457489054090868",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "[怒] 王八蛋！！！",
+            "user id": 2232128240,
+            "user name": "新鲜大百科",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "有良知的请为阿伯转一下，替阿伯夺回公道！！！[怒]",
+            "user id": 2395961852,
+            "user name": "魔兽全攻略",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "草，王八蛋！！！",
+            "user id": 2371320072,
+            "user name": "恶搞毁童年",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 3,
+            "parent": -1,
+            "children": [],
+            "content": "怒了，转起来！！！[怒]",
+            "user id": 2244374152,
+            "user name": "女昔",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 4,
+            "parent": -1,
+            "children": [],
+            "content": "有良知的请为阿伯转一下，替阿伯夺回公道！！！[怒]",
+            "user id": 2244570834,
+            "user name": "急救箱",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 5,
+            "parent": -1,
+            "children": [],
+            "content": "有良知的请为阿伯转一下，替阿伯夺回公道！！！[怒]",
+            "user id": 2196965334,
+            "user name": "范瑾妮",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 6,
+            "parent": -1,
+            "children": [],
+            "content": "畜生啊！",
+            "user id": 2177472043,
+            "user name": "FXJ_Kitty",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 7,
+            "parent": -1,
+            "children": [],
+            "content": "有良知的请为阿伯转一下，替阿伯夺回公道！！！[怒]",
+            "user id": 2267937544,
+            "user name": "口袋招聘",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 8,
+            "parent": -1,
+            "children": [],
+            "content": "什么法治国家 什么保障民生 真可笑 社会黑暗",
+            "user id": 2242276120,
+            "user name": "凉宫春日的鱿鱼",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 9,
+            "parent": -1,
+            "children": [],
+            "content": "禽兽不如啊[抓狂][怒][怒][怒][怒][怒]",
+            "user id": 2359404864,
+            "user name": "制片人杰少",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 10,
+            "parent": -1,
+            "children": [],
+            "content": "中国政府再不改变，中国离灭亡也不远了。",
+            "user id": 1973352677,
+            "user name": "萧商会高炎",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 11,
+            "state_1": 0
+        }
+    }
+}
