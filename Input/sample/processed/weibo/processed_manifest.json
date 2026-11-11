@@ -1,0 +1,16 @@
+{
+  "class_distribution": {
+    "0": 16,
+    "1": 16
+  },
+  "data_sha256": "b858ad011fff88c97be3df1a40b88af67f0c0653464b86e5b2e6627d157b8da6",
+  "dataset": "weibo",
+  "label_schema_sha256": "dfa97643a7761c6b192c72a3be0f22cf84b08eb6ed019caeaabae37f6447602c",
+  "processed_root": "/share/home/hwxu/Researches/D2Plus/Input/sample/processed/weibo",
+  "raw_manifest_sha256": "a4e1b4c78021e0086f71044b892306353a1146e793cee5469fca093c6fb6ea62",
+  "sample_count": 32,
+  "schema_version": "1",
+  "slices_sha256": "ffff9d6203e741a0c1242b8fb487dc7fa2e86cfa7840446a2231edfde442a814",
+  "source_id_sha256": "7809ed0ed34e7eb89ef66e17be6aca40ec54ff67243846982db9dc048188edcf",
+  "time_unit": "hop"
+}

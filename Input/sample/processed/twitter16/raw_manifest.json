@@ -1,0 +1,184 @@
+{
+  "dataset": "twitter16",
+  "files": {
+    "file_count": 34,
+    "files": [
+      {
+        "path": "label.txt",
+        "sha256": "570ff0392f55095a007f86f3bf3d747a7c31078cbbea2a9d91b2f259136e37f2",
+        "size": 864
+      },
+      {
+        "path": "source_tweets.txt",
+        "sha256": "e13cf8de0723f6827ff081ec04483d33552fa12479d4fdaff08ff63023a15a4e",
+        "size": 3634
+      },
+      {
+        "path": "tree/500378223977721856.txt",
+        "sha256": "61b2ca25d82c2980305b355e7bd65a29640897d169e6c80b2005c595ceb93fd7",
+        "size": 8170
+      },
+      {
+        "path": "tree/524942470472548352.txt",
+        "sha256": "c58fa5031d8f8aa9f9cffe83ca7ee7c783925d28fc3fc5cdac92a9d694a81fea",
+        "size": 8416
+      },
+      {
+        "path": "tree/524975705206304769.txt",
+        "sha256": "771ddeead87af49b1c52be9b47f694e1f42da706c9debd05f9518e036c6eaa3d",
+        "size": 33016
+      },
+      {
+        "path": "tree/524980744658382848.txt",
+        "sha256": "bc2a7f617b24e0dff2ca78aff33551b8f775abe47e4f934d3b9a3d6913bcbfab",
+        "size": 19348
+      },
+      {
+        "path": "tree/525068915068923904.txt",
+        "sha256": "c50f399b510ac5b74dc6aa10e20440c1f30a6c4433a94ef622011d8bc3c495e1",
+        "size": 8799
+      },
+      {
+        "path": "tree/544513524438155264.txt",
+        "sha256": "983cda7a629241bc4ce01336eeafbd2586cbd0d6fb5690394894eb55d9e5affe",
+        "size": 9015
+      },
+      {
+        "path": "tree/552832817089236992.txt",
+        "sha256": "b1fb61d50fa9505f02e81b98971c1249f4c8e1c2a3f3f32fdbe9043b423228a2",
+        "size": 8551
+      },
+      {
+        "path": "tree/553221600955621376.txt",
+        "sha256": "3b51bd06ec745866f158b3040d3aeea58d38b153a4399743ad92b1d5d15f1f63",
+        "size": 8244
+      },
+      {
+        "path": "tree/613425834301485056.txt",
+        "sha256": "a83797625b8a5c01c250284bd474bc140836977943de9e24d2f2e3f79a5e74b3",
+        "size": 9799
+      },
+      {
+        "path": "tree/620835698514464768.txt",
+        "sha256": "469f32241926a45b078b9c12e76c8dc9da091bc0e8659f645cd10c0922c3127b",
+        "size": 8774
+      },
+      {
+        "path": "tree/626897206717624320.txt",
+        "sha256": "061fb5fff4d22db5b52f706e79648d6b4e7de6baa0602573f85e83f2f643e02c",
+        "size": 6889
+      },
+      {
+        "path": "tree/637382230394822656.txt",
+        "sha256": "167b44e7a71bab5e8610f7fcbb9cb1199ad97df7c2bb8c5fad4abc15ab2a7b77",
+        "size": 8389
+      },
+      {
+        "path": "tree/647193820812177408.txt",
+        "sha256": "4d5b20025947b5a44111f85eb61903d34c36c6a264ac28254dfb67c5181f7713",
+        "size": 7780
+      },
+      {
+        "path": "tree/652992524504600576.txt",
+        "sha256": "8617b0ce381640dddae0f08aabfebd7b585ccdcb30332a71df122f4edea978bd",
+        "size": 8092
+      },
+      {
+        "path": "tree/654336219447472128.txt",
+        "sha256": "c91436f15ff37197c38e6e4070084b144e01e272043b5e02b6dbf435826ead43",
+        "size": 10277
+      },
+      {
+        "path": "tree/661222523275636736.txt",
+        "sha256": "d2847e15a59b53980a3cc07649f96ca2a6f045e000e07e7933a185bd731942d5",
+        "size": 8294
+      },
+      {
+        "path": "tree/675065047710892033.txt",
+        "sha256": "f825df9ca6fdfc43be6455f8199a07a726b655a7f095954ac3e17cce4ee01488",
+        "size": 9021
+      },
+      {
+        "path": "tree/691995324752252930.txt",
+        "sha256": "2d157dc52735b3f62b7cfa5463981ec448eb51678e841d2c65d1a150ae42692c",
+        "size": 21552
+      },
+      {
+        "path": "tree/692701223326056449.txt",
+        "sha256": "724171161768797f442fdbbc81c4f6ce9a303f1a7f824d87b4c9c7abceece4e4",
+        "size": 21483
+      },
+      {
+        "path": "tree/692743102432346113.txt",
+        "sha256": "51c647e599aef429f0554aa39a37be3a9e2a232d8f7cafa4bc8d028583ed7b86",
+        "size": 24404
+      },
+      {
+        "path": "tree/692758581494599681.txt",
+        "sha256": "0f8fbd1cfa1740917b1b028d8cc01cd993d4a2189295a645d7f6cf986e9649ca",
+        "size": 21265
+      },
+      {
+        "path": "tree/693281966846808064.txt",
+        "sha256": "dd1d8a43d379bf89b37f78d35c586244764abb34438076c59f0cbdf841c95be1",
+        "size": 26291
+      },
+      {
+        "path": "tree/693534670428971008.txt",
+        "sha256": "5a9fb42d6e652a70641a4602a0236c071fb35e9fdc49b89b0f4b6caa4260c8c4",
+        "size": 25600
+      },
+      {
+        "path": "tree/693641113693884416.txt",
+        "sha256": "aa1e4895718e0004a6c23e161688c1b55b79df96362e967094419a84038e95c7",
+        "size": 21531
+      },
+      {
+        "path": "tree/693818562981421056.txt",
+        "sha256": "3c7baabbc736e1aed21de148b69f2818101cb152a78dcdfef6b37b668a0f06a1",
+        "size": 24735
+      },
+      {
+        "path": "tree/706665777332621314.txt",
+        "sha256": "e58b2b81902f28f73d906804a36ef724977db352f3c2380714065767337f7543",
+        "size": 8325
+      },
+      {
+        "path": "tree/712223438698627073.txt",
+        "sha256": "b78d58a9a4dc1e67dd91ec5cbc4cf239bc2072a7f46ebbaa59cb488b48af5354",
+        "size": 8511
+      },
+      {
+        "path": "tree/723504069814444033.txt",
+        "sha256": "aafb2fb646ac328ec016494e735a50011eed8b3fb66c867aa4152b6640d321eb",
+        "size": 19420
+      },
+      {
+        "path": "tree/723772395211862016.txt",
+        "sha256": "01a8770db75239c06a5b526cd702ecc96413e3d864e547574f6df1a845721157",
+        "size": 8428
+      },
+      {
+        "path": "tree/724624672604610562.txt",
+        "sha256": "0d5e73e17ab7cc60cfeee1644edf94a779a463b510185d0093b1d1746f2faacd",
+        "size": 8931
+      },
+      {
+        "path": "tree/724661834419048448.txt",
+        "sha256": "cb5676c304ebeabd01f682e17faaee111bb1abe6345d5268aec57e9fd3442321",
+        "size": 11717
+      },
+      {
+        "path": "tree/745236050407194624.txt",
+        "sha256": "58b79a2a1be7b47c5b8fb3e7d5045207878faa7517afa94312372e7d4a9c4ba6",
+        "size": 8819
+      }
+    ],
+    "root": "/share/home/hwxu/Researches/D2Plus/Input/sample/raw/twitter16",
+    "sha256": "17c4a14c647241b5f5721e30cefd65365367f8bd4b35ecb7f0048922331d1c6a"
+  },
+  "label_schema_sha256": "b5286fbb1955d3ff638faf4f8f27172da732c7be34204ebc704626a1e840de7e",
+  "raw_root": "/share/home/hwxu/Researches/D2Plus/Input/sample/raw/twitter16",
+  "schema_version": "1",
+  "source_id_sha256": "136d579c5f2a66759c4befd8c4220ea5cc0cf12b0ebb678a489b2c013788cee6"
+}

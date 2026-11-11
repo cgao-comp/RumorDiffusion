@@ -1,0 +1,82 @@
+{
+  "dataset": "twitter16",
+  "generation_command": "prepare_canonical_inputs.py --exp Libs/configs/exp_sample.yaml --dataset-config Libs/configs/dataset_sample.yaml",
+  "processed_manifest_sha256": "feb7ee432a0faacee22b71384bb870f358019acb819629a03a7a699716d148c4",
+  "raw_manifest_sha256": "565c86b30c08672ccddcb809d2e100a3e2204fe511b878198a9cbbb277c87498",
+  "sample_count": 32,
+  "schema_version": "1",
+  "source_id_sha256": "136d579c5f2a66759c4befd8c4220ea5cc0cf12b0ebb678a489b2c013788cee6",
+  "split_seed": 42,
+  "split_strategy": "stratified",
+  "splits": {
+    "test": {
+      "class_distribution": {
+        "0": 2,
+        "1": 2,
+        "2": 2,
+        "3": 2
+      },
+      "sample_count": 8,
+      "source_id_sha256": "9820c5b50d00c9edd749af8908bf60fec3bd9859078fe2b1c884682bcc0bd63a",
+      "source_ids": [
+        "692743102432346113",
+        "693818562981421056",
+        "524980744658382848",
+        "524975705206304769",
+        "637382230394822656",
+        "613425834301485056",
+        "723504069814444033",
+        "724624672604610562"
+      ]
+    },
+    "train": {
+      "class_distribution": {
+        "0": 4,
+        "1": 4,
+        "2": 4,
+        "3": 4
+      },
+      "sample_count": 16,
+      "source_id_sha256": "b59a7f6ee534cc37de1d33f2d9bcb378c414c26ecf9c74fdaefeecbdf5334acc",
+      "source_ids": [
+        "693641113693884416",
+        "691995324752252930",
+        "692701223326056449",
+        "692758581494599681",
+        "553221600955621376",
+        "500378223977721856",
+        "524942470472548352",
+        "525068915068923904",
+        "626897206717624320",
+        "647193820812177408",
+        "661222523275636736",
+        "652992524504600576",
+        "706665777332621314",
+        "723772395211862016",
+        "712223438698627073",
+        "745236050407194624"
+      ]
+    },
+    "val": {
+      "class_distribution": {
+        "0": 2,
+        "1": 2,
+        "2": 2,
+        "3": 2
+      },
+      "sample_count": 8,
+      "source_id_sha256": "6c53c9ef6732f35a46c03ed8fe8f7569558435d6c58a98920de9a9ffade02036",
+      "source_ids": [
+        "693534670428971008",
+        "693281966846808064",
+        "552832817089236992",
+        "544513524438155264",
+        "620835698514464768",
+        "675065047710892033",
+        "654336219447472128",
+        "724661834419048448"
+      ]
+    }
+  },
+  "splits_sha256": "4f3cd32ff2cbb4cc1061c4ecf098fd3eb81725d030eb8bf7b3031574d371566b"
+}

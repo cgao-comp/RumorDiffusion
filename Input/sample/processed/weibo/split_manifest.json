@@ -1,0 +1,76 @@
+{
+  "dataset": "weibo",
+  "generation_command": "prepare_canonical_inputs.py --exp Libs/configs/exp_sample.yaml --dataset-config Libs/configs/dataset_sample.yaml",
+  "processed_manifest_sha256": "e13b867bbf2c1a4192ba5994c600f4526a26ea78fe8eb8350b9c6ca8d60dd396",
+  "raw_manifest_sha256": "a4e1b4c78021e0086f71044b892306353a1146e793cee5469fca093c6fb6ea62",
+  "sample_count": 32,
+  "schema_version": "1",
+  "source_id_sha256": "7809ed0ed34e7eb89ef66e17be6aca40ec54ff67243846982db9dc048188edcf",
+  "split_seed": 42,
+  "split_strategy": "stratified",
+  "splits": {
+    "test": {
+      "class_distribution": {
+        "0": 4,
+        "1": 4
+      },
+      "sample_count": 8,
+      "source_id_sha256": "a0edd11b20225c90cbbaa1f157107dd0f2e11f28a83abae8866fd148887d333c",
+      "source_ids": [
+        "11501258141",
+        "3911643618304355",
+        "3908278138535984",
+        "3909125484148394",
+        "12630150453",
+        "3613103327395758",
+        "3578563875680633",
+        "3548612241976905"
+      ]
+    },
+    "train": {
+      "class_distribution": {
+        "0": 8,
+        "1": 8
+      },
+      "sample_count": 16,
+      "source_id_sha256": "50456941a2410d89fcd364c60f7008d070c05432695ee21582b9941aff38fa28",
+      "source_ids": [
+        "3907730051761362",
+        "3911180017645937",
+        "3680560520118168",
+        "3911209289717027",
+        "3909231033736573",
+        "3909178366223186",
+        "3911608512142528",
+        "3911633284223848",
+        "3558997363714404",
+        "3511687216690701",
+        "3531468229934700",
+        "3530173875627205",
+        "3487357246294956",
+        "3630121455811585",
+        "3602269863635520",
+        "3585893346832794"
+      ]
+    },
+    "val": {
+      "class_distribution": {
+        "0": 4,
+        "1": 4
+      },
+      "sample_count": 8,
+      "source_id_sha256": "01a2597bef07fe6db7ff1e920c213e1729093b106f00850a99313bd8aa7bc865",
+      "source_ids": [
+        "3912030362314631",
+        "3909708618442913",
+        "3911752783672596",
+        "3911221994204571",
+        "3586281571142628",
+        "3515833974728440",
+        "3457489054090868",
+        "3693001060527378"
+      ]
+    }
+  },
+  "splits_sha256": "4f3cd32ff2cbb4cc1061c4ecf098fd3eb81725d030eb8bf7b3031574d371566b"
+}

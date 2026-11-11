@@ -1,0 +1,18 @@
+{
+  "class_distribution": {
+    "0": 8,
+    "1": 8,
+    "2": 8,
+    "3": 8
+  },
+  "data_sha256": "62279d7bc472113c8692c06b29f3648615d73c045a4634a338eb63a2dbea1e5b",
+  "dataset": "twitter16",
+  "label_schema_sha256": "b5286fbb1955d3ff638faf4f8f27172da732c7be34204ebc704626a1e840de7e",
+  "processed_root": "/share/home/hwxu/Researches/D2Plus/Input/sample/processed/twitter16",
+  "raw_manifest_sha256": "565c86b30c08672ccddcb809d2e100a3e2204fe511b878198a9cbbb277c87498",
+  "sample_count": 32,
+  "schema_version": "1",
+  "slices_sha256": "b2105d335f3cd072875ff69bf1e78385c686a72ef8e72bbc73748b9a96502980",
+  "source_id_sha256": "136d579c5f2a66759c4befd8c4220ea5cc0cf12b0ebb678a489b2c013788cee6",
+  "time_unit": "minutes"
+}
