@@ -1,0 +1,5 @@
+name: rumordiffusion
+model:
+  loss:
+    lambda_diffusion: 0.0
+

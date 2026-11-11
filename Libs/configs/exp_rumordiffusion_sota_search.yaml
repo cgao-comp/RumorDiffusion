@@ -1,0 +1,336 @@
+experiment:
+  seeds: [42]
+
+dataset:
+  name: twitter15
+  root: /share/home/hwxu/Researches/D2Plus/Input/processed_paper_aligned
+  use_lp_edges: false
+  text_normalization:
+    lowercase: true
+    replace_url: true
+    replace_mention: true
+    replace_number: true
+    compress_repeated_chars: true
+    keep_hashtag_text: true
+  text_encoder:
+    model_name_or_path: /share/home/hwxu/Researches/D2Plus/Input/sentence_transformers_all_MiniLM_L6v2
+    batch_size: 4
+    cache_tag: minilm_sota_search
+    cache_name: text_embs.pt
+    force_text_cache: false
+    normalize_embeddings: false
+    rebuild_cache: false
+  prefix:
+    strategy: minutes
+    unit: minutes
+    window: 60
+    minutes: 60
+    k:
+    include_root: true
+    window_overrides:
+      weibo: 3
+      pheme: 3
+    unit_overrides:
+      weibo: hop
+      pheme: hop
+  observability:
+    drop_edge: 0.0
+    drop_node: 0.0
+    seed: 1024
+  observability_sweep:
+    drop_node: []
+    drop_edge: []
+
+device:
+  force_cpu: false
+  gpu_id: 0
+  type: cuda
+
+evaluation:
+  ece_bins: 15
+  class_names:
+    0: non-rumor
+    1: "true"
+    2: "false"
+    3: unverified
+  detailed: true
+  class_names_overrides:
+    weibo:
+      0: non-rumor
+      1: rumor
+    pheme:
+      0: non-rumor
+      1: rumor
+  max_samples: 64
+  export_predictions:
+    enabled: true
+  latency:
+    enabled: true
+    repeat: 1
+    warmup_batches: 0
+  max_batches: 4
+  significance:
+    enabled: false
+    baseline_models: []
+    metrics: [macro_f1, acc]
+    n_bootstrap: 100
+  early_observation:
+    default_windows: [10]
+    default_unit: minutes
+    windows_overrides:
+      weibo: [1]
+      pheme: [1]
+    unit_overrides:
+      weibo: hop
+      pheme: hop
+
+outputs:
+  ckpt_dir: /share/home/hwxu/Researches/D2Plus/Output/ckpts/rumordiffusion_sota_search
+  dir: /share/home/hwxu/Researches/D2Plus/Output/rumordiffusion_sota_search/twitter15
+  log_dir: /share/home/hwxu/Researches/D2Plus/Output/logs/rumordiffusion_sota_search
+  results_dir: /share/home/hwxu/Researches/D2Plus/Output/results/rumordiffusion_sota_search
+  prediction_csv: /share/home/hwxu/Researches/D2Plus/Output/results/rumordiffusion_sota_search/predictions.csv
+  revision_artifacts_csv: /share/home/hwxu/Researches/D2Plus/Output/results/rumordiffusion_sota_search/revision_artifacts.csv
+
+sbatch:
+  job_prefix: DPlus
+  conda_env: hw
+  profiles:
+    rumordiffusion_train:
+      partition: gpu1
+      nodelist: gpu03
+      gres: gpu:1
+      cpus_per_task: 4
+      mem: 16G
+      log_dir: /share/home/hwxu/Researches/D2Plus/Output/logs/rumordiffusion_sota_search
+      cuda_devices: [0]
+    transfer:
+      partition: gpu1
+      nodelist: gpu03
+      gres: gpu:1
+      cpus_per_task: 4
+      mem: 16G
+      log_dir: /share/home/hwxu/Researches/D2Plus/Output/logs/rumordiffusion_sota_search
+      cuda_devices: [0]
+
+transfer:
+  mode: source_only
+  pairs:
+    - source: twitter15
+      target: twitter16
+    - source: weibo
+      target: pheme
+  models:
+    - Libs/configs/baselines/rumordiffusion_sota_candidate.yaml
+  ckpt_name: best.pt
+  lp_edges_policy: require_existing
+  metric_only: true
+  skip_existing: true
+  results_path: /share/home/hwxu/Researches/D2Plus/Output/results/rumordiffusion_sota_search/transfer.csv
+  adaptation:
+    target_split: train
+    selection_split: val
+    adapt_ckpt_name: best_target_adapt.pt
+
+rumordiffusion:
+  checkpoint:
+    validate_metadata: true
+    require_config_hash: true
+    allow_legacy: false
+    ctdm_dir: /share/home/hwxu/Researches/D2Plus/Output/ckpts/rumordiffusion_sota_search
+    ctdm_subdir: rumordiffusion_ctdm_minilm_sota_search
+  cache_potentials_after_ctdm: false
+  arbiter:
+    dropout: 0.3
+    freeze_ctdm: true
+    hidden: 256
+    readout: cls
+    token_norm: layernorm
+    token_dropout: 0.3
+    pair_ids: [1, 2]
+    tf_head_enabled: true
+    tf_infer_adjust_alpha: 0.15
+    uncertainty_force_ctdm: true
+    transformer:
+      dim_feedforward: 512
+      dropout: 0.3
+      nhead: 8
+      nlayers: 3
+    type: transformer
+    use_pair_token: true
+    prototype_residual:
+      enabled: false
+      temperature: 0.07
+      momentum: 0.95
+      logit_weight: 0.0
+      min_count: 1
+    semantic_residual:
+      enabled: false
+      use_root: true
+      use_text: true
+      dropout: 0.2
+      logit_weight: 0.0
+    posterior_aggregation:
+      enabled: false
+      samples: 1
+      mode: mean_logits
+      force_ctdm: false
+      stochastic: false
+  ctdm:
+    T: 50
+    t_stride: 20
+    obs_minutes: 30
+    hidden: 256
+    num_layers: 3
+    dropout: 0.3
+    t_embed_dim: 64
+    film_hidden: 128
+    max_nodes: 0
+    guidance_p: 0.2
+    guidance_scale: 3.0
+    sampling_eta: 1.0
+    backbone:
+      name: gat
+      heads: 8
+      dropout: 0.3
+      aggregators: [mean, min, max, std]
+      scalers: [identity, amplification, attenuation]
+    multiwindow:
+      enabled: true
+      min: 10
+      max: 30
+    sparse_pairs:
+      enabled: true
+      strategy: b
+      topk: 8
+      lambda_time: 1.0
+      lambda_degree: 1.0
+    regularizers:
+      lambda_proto: 0.10
+      temperature: 0.07
+      momentum: 0.9
+      lambda_topo_bce: 0.10
+      lambda_deg_kl: 0.07
+      lambda_proto_orth: 0.10
+      lambda_supcon_pair: 0.15
+      pair_ids: [1, 2]
+  dd_gan:
+    enabled: true
+    lambda_gan: 0.08
+    lr_d: 0.0001
+    lambda_r1: 10.0
+  dataset_overrides:
+    weibo:
+      potentials_pair: [0, 1]
+      arbiter:
+        pair_ids: [0, 1]
+      ctdm:
+        regularizers:
+          pair_ids: [0, 1]
+    pheme:
+      potentials_pair: [0, 1]
+      arbiter:
+        pair_ids: [0, 1]
+      ctdm:
+        regularizers:
+          pair_ids: [0, 1]
+  evaluation:
+    uncertainty:
+      sampling: stochastic_reverse
+      potential_readout: sampled_full_graph
+    early_stop:
+      enabled: true
+      samples: 1
+      max_batches: 1
+      tau_low: 0.3
+      tau_high: 0.7
+      gamma: 0.02
+      rumor_classes: [1, 2, 3]
+    sampling_sweep:
+      enabled: false
+      samples: [1]
+      windows: [10]
+      max_batches: 1
+    threshold_sweep:
+      enabled: false
+      samples: 1
+      tau_low: []
+      tau_high: []
+      gamma: []
+      max_batches: 1
+    robustness:
+      edge_dropout: []
+    calibration:
+      enabled: true
+      type: temperature
+      fit_split: val
+      ece_bins: 15
+      max_iter: 20
+      lr: 0.05
+      init_temp: 1.0
+  loss:
+    la_gamma: 2.2
+    la_smooth: 0.05
+    la_tau: 1.0
+    lambda_pair_margin: 0.2
+    lambda_tf_bce: 0.2
+    pair_margin_enabled: true
+    pair_margin_m: 0.7
+    w_brier: 0.01
+    w_cons: 0.05
+  potentials_dir: rd_potentials_sota_search
+  seed_scoped_potentials: true
+  potentials_pair: [0, 1, 2, 3]
+  text:
+    backend: sentence-transformers
+    enabled: true
+    fuse_mode: concat
+    model: all-MiniLM-L6-v2
+    text_dim: 384
+    robust_text:
+      noise_std: []
+      dropout_p: []
+
+training:
+  amp: true
+  batch_size: 1
+  batch_size_ctdm: 1
+  early_stopping_patience: 2
+  epochs: 2
+  epochs_ctdm: 5
+  grad_clip: 1.0
+  lr: 0.0003
+  lr_ctdm: 0.0003
+  num_workers: 0
+  use_tqdm: true
+  weight_decay: 0.0001
+  weight_decay_ctdm: 0.0001
+  reuse_ctdm_pretrain: false
+  max_batches_per_epoch: 4
+  max_batches_per_epoch_ctdm: 4
+  max_samples: 64
+  min_epochs: 1
+  min_epochs_ctdm: 1
+  potentials_batch_size: 1
+  potentials_num_workers: 0
+  reuse_cached_potentials: true
+  joint_finetuning:
+    enabled: false
+    arbiter_lr: 0.0002
+    ctdm_lr: 0.00003
+    weight_decay: 0.0001
+    ctdm_unfreeze_last_layers: 1
+    trainable_heads:
+      - film
+      - readout
+      - full_to_latent
+      - eps_x
+      - edge_q
+      - edge_k
+      - time_embed
+      - class_embed
+      - text_proj
+      - text_fusion_layer
+      - gated_text_fusion
+      - multiscale_proj
+      - forecast_head

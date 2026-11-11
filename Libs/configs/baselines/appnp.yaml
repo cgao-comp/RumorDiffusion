@@ -1,0 +1,7 @@
+name: appnp
+model:
+  hidden: 128
+  num_layers: 2
+  dropout: 0.3
+  alpha: 0.1
+  k: 10

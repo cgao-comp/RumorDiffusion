@@ -1,0 +1,6 @@
+name: rumordiffusion
+model:
+  ctdm:
+    T: 100
+    t_stride: 10
+

@@ -1,0 +1,97 @@
+# Source-only release archive consumed by Libs/scripts/build_source_release.py.
+# Relative paths resolve against the repository root. Every pattern must match at
+# least one path, and every keep directory must exist and receive no shipped file;
+# otherwise the build fails.
+source_release:
+  name: RumorDiffusion
+  # Committed tree that supplies all code, configuration, schemas, and tests
+  # Working-tree overlays below are declared separately in the release manifest.
+  source_revision: 2905e3110304c81577e3ca56b3f611d0a05851ef
+  archive:
+    output_dir: ../D2Plus_release
+    file_stem: RumorDiffusion_source
+    root_dir: RumorDiffusion
+    manifest_name: release_manifest.yaml
+    compression_level: 9
+  max_file_bytes: 2097152
+  # Exclude local agent configuration, backups, and checks whose protected assets
+  # are not shipped. Retain project governance and context for a complete handoff.
+  exclude:
+    - .codex
+    - Libs/configs/exp.yaml.backup.*
+    - schemas/protected_figures.sha256
+    - tests/test_original_figure_immutability.py
+  # Working-tree files that replace or extend the source revision. The main-window
+  # manuscript configuration is the declared base of exp_manuscript_three_seed.yaml and
+  # the seed-42 configuration of run_manuscript_main.sh; it exists only in this checkout.
+  overlay:
+    - README.md
+    - TODO.md
+    - Libs/scripts/build_source_release.py
+    - Libs/scripts/run_source_release.sh
+    - Libs/configs/source_release.yaml
+    - tests/test_source_release.py
+    - Libs/configs/exp_manuscript_main.yaml
+  # Ignored working-tree provenance records shipped without the data they describe.
+  data_manifests:
+    - Input/processed_canonical_v1/*/label_schema.json
+    - Input/processed_canonical_v1/*/processed_manifest.json
+    - Input/processed_canonical_v1/*/raw_manifest.json
+    - Input/processed_canonical_v1/*/split_manifest.json
+    - Input/processed_canonical_v1/*/splits.json
+    - Input/processed_canonical_v1/*/text_embs_mpnet_canonical_v1.pt.manifest.json
+  # Runtime locations retained as empty directories with a .keep placeholder.
+  keep_dirs:
+    - Input/raw/twitter15
+    - Input/raw/twitter16
+    - Input/raw/weibo
+    - Input/raw/pheme
+    - Input/sentence_transformers_all_mpnet_base_v2
+    - Output/canonical
+    - Output/exploratory
+    - Output/failed
+    - Output/motivation
+    - Input/processed
+    - Input/processed_paper_aligned
+    - Input/sentence_transformers_all_MiniLM_L6v2
+    - Input/sentence_transformers_all_mpnet_base_v2_probe
+    - Output/archive
+    - Output/canonical_control
+    - Output/ckpts
+    - Output/figures
+    - Output/logs
+    - Output/quarantine
+    - Output/results
+    - Docs/design
+    - Docs/engineering
+    - Docs/rebuttal
+    - Docs/paper/Figs
+    - Docs/paper/Miscs
+  keep_file_name: .keep
+  forbidden_suffixes:
+    - .7z
+    - .bin
+    - .ckpt
+    - .csv
+    - .err
+    - .gz
+    - .log
+    - .npy
+    - .npz
+    - .onnx
+    - .out
+    - .parquet
+    - .pdf
+    - .pkl
+    - .pt
+    - .pth
+    - .pyc
+    - .safetensors
+    - .tar
+    - .zip
+  forbidden_path_parts:
+    - .git
+    - .pytest_cache
+    - .ruff_cache
+    - .vscode
+    - __pycache__

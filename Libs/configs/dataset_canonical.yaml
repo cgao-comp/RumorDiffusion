@@ -1,0 +1,56 @@
+dataset:
+  datasets: ["twitter15", "twitter16", "weibo", "pheme"]
+  raw_root: "/share/home/hwxu/Researches/D2Plus/Input/raw"
+  processed_root: "${RUMORDIFFUSION_PROCESSED_ROOT}"
+  split:
+    type: stratified
+    ratios: {"train": 0.8, "val": 0.1, "test": 0.1}
+    seed: 42
+  labels:
+    allowed: ["true", "false", "unverified", "non-rumor"]
+    map: {"non-rumor": 0, "true": 1, "false": 2, "unverified": 3}
+    skip_unknown: true
+    overrides:
+      weibo:
+        allowed: ["non-rumor", "rumor"]
+        map: {"non-rumor": 0, "rumor": 1}
+        skip_unknown: true
+        numeric: true
+      pheme:
+        allowed: ["non-rumor", "rumor"]
+        map: {"non-rumor": 0, "rumor": 1}
+        skip_unknown: true
+        numeric: true
+  early:
+    truncation:
+      mode: none
+      window:
+      unit: auto
+    cutoff_minutes: 60
+    enforce_root_component: true
+  features:
+    structural: ["norm_time", "depth", "in_degree", "out_degree", "parent_delta_norm"]
+  text:
+    encoder_path: "${RUMORDIFFUSION_TEXT_ENCODER}"
+    normalize: true
+    cache_name: "text_embs_mpnet_canonical_v1.pt"
+    batch_size: 32
+    normalization:
+      lowercase: true
+      replace_url: true
+      replace_mention: true
+      replace_number: true
+      compress_repeated_chars: true
+      keep_hashtag_text: true
+  augment:
+    enabled: false
+    method: none
+    text_noise_std: 0.0
+    text_dropout: 0.0
+  saving:
+    format: pyg_inmemory
+  time_source:
+    default: "minutes"
+    overrides:
+      weibo: "hop"
+      pheme: "hop"

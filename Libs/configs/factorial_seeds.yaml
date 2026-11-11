@@ -1,0 +1,20 @@
+protocol_id: rumordiffusion_canonical_v1
+seed_experiments:
+  ctdm_varying:
+    varied_stage: ctdm
+    ctdm_seeds: [42, 3407, 126, 218, 91]
+    arbiter_seed: 42
+    inference_seed: 42
+  arbiter_varying:
+    varied_stage: arbiter
+    ctdm_seed: 42
+    arbiter_seeds: [42, 3407, 126, 218, 91]
+    inference_seed: 42
+  inference_varying:
+    varied_stage: inference
+    ctdm_seed: 42
+    arbiter_seed: 42
+    inference_seeds: [42, 3407, 126, 218, 91]
+  all_varying:
+    varied_stage: all
+    seeds: [42, 3407, 126, 218, 91]

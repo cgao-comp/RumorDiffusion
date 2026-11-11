@@ -1,0 +1,119 @@
+base_config: exp_paper_ready.yaml
+protocol_id: rumordiffusion_canonical_v1
+datasets: [twitter15, twitter16, weibo, pheme]
+experiment:
+  seeds: [42, 3407, 126, 218, 91]
+split:
+  strategy: cascade_level
+  seed: 42
+  calibration_split: val
+  report_split: test
+dataset:
+  name: twitter15
+  root: ${RUMORDIFFUSION_PROCESSED_ROOT}
+  mode: eval_prefix
+  modes:
+    train: train_arbiter
+    val: eval_prefix
+    test: eval_prefix
+  text_encoder:
+    model_name_or_path: ${RUMORDIFFUSION_TEXT_ENCODER}
+    batch_size: 32
+    cache_tag: mpnet_canonical_v1
+    cache_name: text_embs_mpnet_canonical_v1.pt
+    force_text_cache: true
+    normalize_embeddings: true
+    rebuild_cache: false
+  use_lp_edges: false
+  require_lp_edges: false
+  prefix:
+    strategy: minutes
+    unit: minutes
+    window: 10
+    include_root: true
+    window_overrides:
+      twitter15: 10
+      twitter16: 10
+      weibo: 1
+      pheme: 1
+    unit_overrides:
+      weibo: hop
+      pheme: hop
+  observability:
+    drop_node: 0.0
+    drop_edge: 0.0
+    seed: 91
+model:
+  name: rumordiffusion
+  variant: canonical
+  config: model_canonical/rumordiffusion.yaml
+  prototype_residual: false
+  semantic_residual: false
+  posterior_aggregation: false
+  joint_finetuning: false
+  sota_search: false
+calibration:
+  method: temperature
+  fit_split: val
+  thresholds_fit_split: val
+  test_is_report_only: true
+training:
+  amp: false
+  num_workers: 0
+  potentials_num_workers: 0
+  reuse_ctdm_pretrain: false
+rumordiffusion:
+  checkpoint:
+    validate_metadata: true
+    require_config_hash: true
+    allow_legacy: false
+    ctdm_dir: Output/exploratory/rumordiffusion_canonical_v1/ckpts
+    ctdm_subdir: rumordiffusion_ctdm_mpnet_canonical_v1
+text_cache:
+  encoder: ${RUMORDIFFUSION_TEXT_ENCODER}
+  tokenizer_hash_required: true
+  normalization_hash_required: true
+outputs:
+  ckpt_dir: Output/exploratory/rumordiffusion_canonical_v1/ckpts
+  log_dir: Output/exploratory/rumordiffusion_canonical_v1/logs
+  results_dir: Output/exploratory/rumordiffusion_canonical_v1/legacy_csv
+  prediction_csv: Output/exploratory/rumordiffusion_canonical_v1/legacy_csv/predictions.csv
+  revision_artifacts_csv: Output/exploratory/rumordiffusion_canonical_v1/legacy_csv/revision_artifacts.csv
+  canonical:
+    enabled: true
+    root: Output
+    protocol_id: rumordiffusion_canonical_v1
+sbatch:
+  profiles:
+    benchmark:
+      partition: cpu
+      nodelist: cpu04
+      gres: ""
+      cpus_per_task: 8
+      mem: 32G
+      log_dir: Output/exploratory/rumordiffusion_canonical_v1/logs
+      cuda_devices: [""]
+    rumordiffusion_train:
+      partition: cpu
+      nodelist: cpu04
+      gres: ""
+      cpus_per_task: 8
+      mem: 48G
+      log_dir: Output/exploratory/rumordiffusion_canonical_v1/logs
+      cuda_devices: [""]
+    transfer:
+      partition: cpu
+      nodelist: cpu04
+      gres: ""
+      cpus_per_task: 8
+      mem: 32G
+      log_dir: Output/exploratory/rumordiffusion_canonical_v1/logs
+      cuda_devices: [""]
+    ablation:
+      partition: cpu
+      nodelist: cpu04
+      gres: ""
+      cpus_per_task: 8
+      mem: 32G
+      log_dir: Output/exploratory/rumordiffusion_canonical_v1/logs
+      cuda_devices: [""]

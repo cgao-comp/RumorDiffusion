@@ -1,0 +1,7 @@
+name: gcn2
+model:
+  hidden: 128
+  num_layers: 4
+  dropout: 0.3
+  alpha: 0.1
+  theta: 0.5

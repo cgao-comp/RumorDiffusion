@@ -1,0 +1,7 @@
+name: tpso
+model:
+  hidden: 128
+  num_layers: 3
+  dropout: 0.3
+  temporal_decay: 2.0
+  readout_decay: 1.0

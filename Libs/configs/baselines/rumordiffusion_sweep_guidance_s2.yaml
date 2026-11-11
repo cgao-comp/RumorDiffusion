@@ -1,0 +1,5 @@
+name: rumordiffusion
+model:
+  ctdm:
+    guidance_scale: 2.0
+

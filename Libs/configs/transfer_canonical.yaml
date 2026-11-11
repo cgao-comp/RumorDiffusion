@@ -1,0 +1,17 @@
+protocol_id: rumordiffusion_canonical_v1
+transfer:
+  mode: source_only
+  formal_pairs:
+    - source: twitter15
+      target: twitter16
+    - source: weibo
+      target: pheme
+  stress_pairs:
+    - source: twitter16
+      target: twitter15
+    - source: pheme
+      target: weibo
+  calibration_fit_split: source_val
+  threshold_fit_split: source_val
+  target_test_report_only: true
+  target_label_tuning: false

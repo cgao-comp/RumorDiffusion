@@ -1,0 +1,44 @@
+# Main-table evaluation declared in Docs/paper/Sections/Exp.tex.
+# Keep the existing three-seed execution bundle and its evidence unchanged.
+base_config: exp_canonical.yaml
+experiment:
+  seeds: [42, 3407, 126, 218, 91]
+  bootstrap_seed: 42
+split:
+  seed: 42
+dataset:
+  prefix:
+    strategy: minutes
+    unit: minutes
+    window: 60
+    window_overrides:
+      twitter15: 60
+      twitter16: 60
+      weibo: 3
+      pheme: 3
+    unit_overrides:
+      weibo: hop
+      pheme: hop
+  observability:
+    seed: 42
+training:
+  reuse_cached_potentials: false
+  reuse_ctdm_pretrain: false
+  use_tqdm: false
+rumordiffusion:
+  cache_potentials_after_ctdm: false
+  arbiter:
+    cache_potentials: false
+  checkpoint:
+    ctdm_dir: ${DPLUS_OUTPUT_ROOT}/exploratory/rumordiffusion_canonical_v1/ckpts/manuscript_main
+outputs:
+  dir: ${DPLUS_OUTPUT_ROOT}/exploratory/rumordiffusion_canonical_v1/manuscript_main
+  ckpt_dir: ${DPLUS_OUTPUT_ROOT}/exploratory/rumordiffusion_canonical_v1/ckpts/manuscript_main
+  log_dir: ${DPLUS_OUTPUT_ROOT}/exploratory/rumordiffusion_canonical_v1/logs/manuscript_main
+  results_dir: ${DPLUS_OUTPUT_ROOT}/exploratory/rumordiffusion_canonical_v1/legacy_csv
+  prediction_csv: ${DPLUS_OUTPUT_ROOT}/exploratory/rumordiffusion_canonical_v1/disabled/predictions.csv
+  revision_artifacts_csv: ${DPLUS_OUTPUT_ROOT}/exploratory/rumordiffusion_canonical_v1/disabled/revision_artifacts.csv
+  canonical:
+    enabled: true
+    root: ${DPLUS_OUTPUT_ROOT}
+    protocol_id: rumordiffusion_canonical_v1

@@ -1,0 +1,53 @@
+name: rumordiffusion_sota_ablate_prefix_consistency
+model: {}
+rumordiffusion_overrides:
+  checkpoint:
+    ctdm_subdir: rumordiffusion_ctdm_sota_ablate_prefix_consistency
+  cache_potentials_after_ctdm: false
+  ctdm:
+    sampling_eta: 0.0
+  loss:
+    lambda_diffusion: 0.05
+  arbiter:
+    freeze_ctdm: false
+    prototype_residual:
+      enabled: true
+      temperature: 0.07
+      momentum: 0.95
+      logit_weight: 0.25
+      min_count: 1
+    semantic_residual:
+      enabled: true
+      use_root: true
+      use_text: true
+      dropout: 0.2
+      logit_weight: 0.20
+    gated_fusion:
+      enabled: true
+      hidden: 256
+      dropout: 0.1
+      temperature: 1.0
+      init_diffusion_bias: 1.5
+    posterior_aggregation:
+      enabled: false
+      samples: 1
+      mode: mean_logits
+      force_ctdm: false
+      stochastic: false
+training:
+  joint_finetuning:
+    enabled: true
+    arbiter_lr: 0.0002
+    ctdm_lr: 1.0e-7
+    weight_decay: 0.0001
+    ctdm_unfreeze_last_layers: 0
+    trainable_heads: [text_proj]
+  prefix_consistency:
+    enabled: false
+  source_robustness:
+    enabled: true
+    weight: 0.05
+    edge_dropout: 0.10
+    text_dropout: 0.10
+    text_noise_std: 0.01
+    prefix_weight: 0.0

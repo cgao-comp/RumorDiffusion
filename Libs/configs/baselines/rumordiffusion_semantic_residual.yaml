@@ -1,0 +1,12 @@
+name: rumordiffusion_semantic_residual
+model: {}
+rumordiffusion_overrides:
+  checkpoint:
+    ctdm_subdir: rumordiffusion_ctdm_sota_semantic_residual
+  arbiter:
+    semantic_residual:
+      enabled: true
+      use_root: true
+      use_text: true
+      dropout: 0.2
+      logit_weight: 0.20

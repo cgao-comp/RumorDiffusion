@@ -1,0 +1,32 @@
+name: d2_forecast_nas
+variant: d2_forecast_nas
+model:
+  hidden: 128
+  num_layers: 2
+  dropout: 0.2
+  attention_heads: 4
+  max_completion_nodes: 0
+  search_space:
+    convolution: [gcn, sage, gat]
+    fusion: [concat, sum, gated]
+    pooling: [mean, max, attention]
+    temporal: [gru, lstm]
+forecast:
+  loss_weights:
+    count: 1.0
+    edge: 1.0
+    author: 1.0
+    coordinate: 1.0
+training:
+  forecast_epochs: 80
+  search_epochs: 40
+  final_epochs: 80
+  min_epochs: 20
+  early_stopping_patience: 20
+  learning_rate: 0.0003
+  architecture_learning_rate: 0.0003
+  weight_decay: 0.0001
+  batch_size: 4
+  grad_clip: 1.0
+  forecast_cache_mib: 2048
+  max_samples: 0

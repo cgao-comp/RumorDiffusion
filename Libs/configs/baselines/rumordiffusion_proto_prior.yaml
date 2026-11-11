@@ -1,0 +1,8 @@
+name: rumordiffusion_proto_prior
+model:
+  arbiter:
+    use_class_embedding: true
+    class_embed_mode: gated
+  loss:
+    lambda_supcon: 0.05
+    supcon_temperature: 0.07

@@ -1,0 +1,5 @@
+name: textonly
+model:
+  hidden: 256
+  dropout: 0.3
+  text_dim: 768

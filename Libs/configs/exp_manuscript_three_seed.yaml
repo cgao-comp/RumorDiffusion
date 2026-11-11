@@ -1,0 +1,4 @@
+# Active manuscript training/inference cohort; fixed split/bootstrap/observability remain 42.
+base_config: /share/home/hwxu/Researches/D2Plus/Libs/configs/exp_manuscript_main.yaml
+experiment:
+  seeds: [41, 42, 43]

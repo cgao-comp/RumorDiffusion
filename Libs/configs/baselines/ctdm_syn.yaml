@@ -1,0 +1,12 @@
+name: ctdm_syn
+model:
+  hidden: 128
+  num_layers: 3
+  dropout: 0.3
+  T: 200
+  obs_minutes: 30
+  t_embed_dim: 128
+  film_hidden: 128
+  t_stride: 20
+  max_nodes: 0
+

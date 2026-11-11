@@ -1,0 +1,28 @@
+protocol_id: rumordiffusion_canonical_v1
+data_contract:
+  shared_split: true
+  shared_horizon: true
+  shared_text_cache: true
+  calibration_fit_split: val
+  prediction_schema: "1"
+sampling:
+  budgets: [1, 2, 4, 8]
+controls:
+  deep_ensemble:
+    base_model: point_classifier
+    members: [1, 2, 4, 8]
+    aggregation: probability_mean
+  mc_dropout:
+    base_model: point_classifier
+    samples: [1, 2, 4, 8]
+    test_time_dropout: true
+  conditional_graph_vae:
+    observed_prefix_only: true
+    samples: [1, 2, 4, 8]
+  rumordiffusion:
+    trajectories: [1, 2, 4, 8]
+latency:
+  cuda_synchronize: true
+  warmup_batches: 10
+  fixed_batch_size: true
+  fixed_sample_order: true

@@ -1,0 +1,121 @@
+name: rumordiffusion_without_pair_awareness
+rumordiffusion_overrides:
+  checkpoint:
+    ctdm_subdir: rumordiffusion_without_pair_awareness_ctdm_mpnet_observed_prefix
+  arbiter:
+    use_pair_token: false
+    tf_head:
+      enabled: false
+      infer_adjust_alpha: 0.0
+    tf_head_enabled: false
+    tf_infer_adjust_alpha: 0.0
+  loss:
+    enable_pair_margin_loss: false
+    enable_multi_pair_margin: false
+    enable_tf_head_loss: false
+    pair_margin_enabled: false
+    lambda_pair_margin: 0.0
+    multi_pair_margin_enabled: false
+    multi_pair_margin_list: []
+    multi_pair_margin_values: []
+    lambda_multi_pair_margin: 0.0
+    lambda_tf_bce: 0.0
+model:
+  ctdm:
+    hidden: 256
+    num_layers: 3
+    dropout: 0.3
+    T: 200
+    t_stride: 20
+    obs_minutes: 30
+    t_embed_dim: 128
+    film_hidden: 128
+    max_nodes: 2048
+    guidance_scale: 3.0
+    guidance_p: 0.2
+    backbone:
+      name: gat
+      dropout: 0.2
+      heads: 8
+    regularizers:
+      lambda_proto: 0.10
+      temperature: 0.07
+      momentum: 0.99
+      lambda_topo_bce: 0.07
+      lambda_deg_kl: 0.07
+    text:
+      enabled: true
+      text_dim: 768
+      fuse_mode: concat
+    multiwindow:
+      enabled: true
+      min: 10
+      max: 30
+    sparse_pairs:
+      enabled: true
+      strategy: b
+      topk: 8
+  arbiter:
+    hidden: 256
+    dropout: 0.3
+    readout: cls
+    token_norm: layernorm
+    token_dropout: 0.3
+    type: transformer
+    freeze_ctdm: false
+    use_pair_token: false
+    pair_token_mode: diff
+    pair_ids: [1, 2]
+    tf_head_enabled: false
+    tf_infer_adjust_alpha: 0.0
+    class_embed_mode: concat_proj
+    cache_potentials: false
+    infer_amp: true
+    use_class_embedding: false
+    transformer:
+      nhead: 8
+      nlayers: 2
+      dim_feedforward: 512
+      dropout: 0.3
+  potentials_pair: [0, 1]
+  loss:
+    enable_pair_margin_loss: false
+    enable_multi_pair_margin: false
+    enable_tf_head_loss: false
+    loss_logging: false
+    pair_margin_enabled: false
+    pair_margin_m: 0.7
+    lambda_pair_margin: 0.0
+    multi_pair_margin_enabled: false
+    multi_pair_margin_list: []
+    multi_pair_margin_values: []
+    lambda_multi_pair_margin: 0.0
+    lambda_tf_bce: 0.0
+    la_tau: 1.0
+    la_gamma: 2.2
+    la_smooth: 0.05
+    w_brier: 0.01
+    w_cons: 0.05
+  dd_gan:
+    enabled: true
+    enable: true
+    lambda_gan: 0.12
+    lr_d: 0.0001
+    lambda_r1: 10.0
+evaluation:
+  early_observation:
+    default_windows: [10, 20, 30]
+    default_unit: minutes
+    windows_overrides:
+      weibo: [1, 2, 3]
+      pheme: [1, 2, 3]
+    unit_overrides:
+      weibo: hop
+      pheme: hop
+  calibration:
+    enabled: true
+    type: temperature
+    ece_bins: 15
+    max_iter: 75
+    lr: 0.05
+    init_temp: 1.0

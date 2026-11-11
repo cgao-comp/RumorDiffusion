@@ -1,0 +1,24 @@
+name: cgvae_gcn
+
+# Stage 1: CVAE parameters
+cvae:
+  hidden: 256
+  latent: 128
+  num_layers: 3
+  epochs: 50
+  lr: 1.0e-3
+  weight_decay: 1.0e-5
+  grad_clip: 1.0
+  dropout: 0.3
+  use_bn: true
+  kl_anneal: true
+  batch_size: 8
+  num_workers: 0
+  early_stopping_patience: 15
+
+# Stage 2: GCN parameters
+model:
+  gcn_hidden: 128
+  gcn_num_layers: 3
+  gcn_dropout: 0.3
+

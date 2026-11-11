@@ -1,0 +1,48 @@
+name: rumordiffusion_posterior_prototype_semantic_joint
+model: {}
+rumordiffusion_overrides:
+  checkpoint:
+    ctdm_subdir: rumordiffusion_ctdm_sota_posterior_prototype_semantic_joint
+  ctdm:
+    sampling_eta: 0.0
+  arbiter:
+    freeze_ctdm: false
+    prototype_residual:
+      enabled: true
+      temperature: 0.07
+      momentum: 0.95
+      logit_weight: 0.25
+      min_count: 1
+    semantic_residual:
+      enabled: true
+      use_root: true
+      use_text: true
+      dropout: 0.2
+      logit_weight: 0.20
+    posterior_aggregation:
+      enabled: true
+      samples: 4
+      mode: mean_logits
+      force_ctdm: true
+      stochastic: false
+training:
+  joint_finetuning:
+    enabled: true
+    arbiter_lr: 0.0002
+    ctdm_lr: 0.00003
+    weight_decay: 0.0001
+    ctdm_unfreeze_last_layers: 1
+    trainable_heads:
+      - film
+      - readout
+      - full_to_latent
+      - eps_x
+      - edge_q
+      - edge_k
+      - time_embed
+      - class_embed
+      - text_proj
+      - text_fusion_layer
+      - gated_text_fusion
+      - multiscale_proj
+      - forecast_head

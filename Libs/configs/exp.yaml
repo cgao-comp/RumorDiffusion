@@ -1,0 +1,293 @@
+experiment:
+  seeds: [42, 3407, 126, 218, 91]
+dataset:
+  name: twitter15
+  root: Input/processed
+  use_lp_edges: false
+  text_normalization:
+    lowercase: true
+    replace_url: true
+    replace_mention: true
+    replace_number: true
+    compress_repeated_chars: true
+    keep_hashtag_text: true
+  text_encoder:
+    model_name_or_path: sentence-transformers/all-mpnet-base-v2
+    batch_size: 32
+    cache_tag: mpnet_round1
+    cache_name: text_embs_mpnet_round1.pt
+    force_text_cache: true
+    normalize_embeddings: true
+    rebuild_cache: false
+  observability_sweep:
+    drop_node: [0.0, 0.1, 0.2]
+    drop_edge: [0.0, 0.1, 0.2]
+  prefix:
+    strategy: none
+    minutes: 60
+    k:
+    include_root: true
+  observability:
+    drop_edge: 0.0
+    drop_node: 0.0
+    seed: 1024
+device:
+  force_cpu: false
+  gpu_id: 0
+  type: cuda
+evaluation:
+  ece_bins: 15
+  class_names:
+    0: non-rumor
+    1: 'true'
+    2: 'false'
+    3: unverified
+  detailed: true
+  class_names_overrides:
+    weibo:
+      0: non-rumor
+      1: rumor
+    pheme:
+      0: non-rumor
+      1: rumor
+  max_samples: 0
+  export_predictions:
+    enabled: true
+  latency:
+    enabled: true
+    repeat: 1
+    warmup_batches: 2
+    max_batches: 0
+  significance:
+    enabled: true
+    baseline_models: [bigcn, tgat, lp_gcn, dga_fake]
+    metrics: [macro_f1, acc]
+    n_bootstrap: 2000
+link_prediction:
+  dropout: 0.3
+  early_stopping_patience: 10
+  epochs: 200
+  grad_clip: 1.0
+  heads: 2
+  hidden: 128
+  lr: 0.0003
+  num_layers: 3
+  num_workers: 0
+  topk_per_node: 2
+  weight_decay: 0.0
+outputs:
+  ckpt_dir: Output/ckpts/round1
+  dir: Output/twitter15
+  log_dir: Output/logs
+  results_dir: Output/results/round1
+  prediction_csv: Output/results/round1/predictions.csv
+  revision_artifacts_csv: Output/results/round1/revision_artifacts.csv
+sbatch:
+  partition: gpu1
+  nodelist: gpu03
+  gres: gpu:1
+  time: "48:00:00"
+  log_dir: Output/logs
+  cuda_devices: [0, 1, 2, 3]
+bench_models:
+  default: ["bigcn", "cgvae_gcn", "dga_fake", "gat", "gcn", "lp_gcn", "resgcn", "tgat", "rumordiffusion"]
+transfer:
+  mode: source_only
+  pairs:
+    - source: twitter15
+      target: twitter16
+    - source: weibo
+      target: pheme
+  models:
+    - Libs/configs/baselines/rumordiffusion.yaml
+  ckpt_name: best.pt
+  lp_edges_policy: require_existing
+  results_path: Output/results/round1/transfer.csv
+  adaptation:
+    target_split: train
+    selection_split: val
+    adapt_ckpt_name: best_target_adapt.pt
+rumordiffusion:
+  checkpoint:
+    validate_metadata: true
+    allow_legacy: false
+  arbiter:
+    dropout: 0.3
+    freeze_ctdm: true
+    hidden: 256
+    input_norm: true
+    readout: cls
+    token_norm: layernorm
+    token_dropout: 0.3
+    pair_ids:
+      - 1
+      - 2
+    tf_head:
+      enabled: true
+      infer_adjust_alpha: 0.15
+      weight: 0.5
+    tf_head_enabled: true
+    tf_infer_adjust_alpha: 0.15
+    uncertainty_force_ctdm: true
+    transformer:
+      dim_feedforward: 512
+      dropout: 0.3
+      nhead: 8
+      nlayers: 3
+    type: transformer
+    use_pair_token: true
+  ctdm:
+    T: 200
+    backbone:
+      aggregators:
+        - mean
+        - min
+        - max
+        - std
+      dropout: 0.3
+      heads: 8
+      name: gat
+      scalers:
+        - identity
+        - amplification
+        - attenuation
+    dropout: 0.3
+    film_hidden: 128
+    guidance_p: 0.2
+    guidance_scale: 3.0
+    sampling_eta: 1.0
+    hidden: 256
+    max_nodes: 0
+    multiwindow:
+      enabled: true
+      max: 60
+      min: 10
+    num_layers: 3
+    obs_minutes: 60
+    regularizers:
+      lambda_deg_kl: 0.07
+      lambda_proto: 0.10
+      lambda_proto_orth: 0.10
+      lambda_supcon_pair: 0.15
+      lambda_topo_bce: 0.10
+      momentum: 0.9
+      pair_ids:
+        - 1
+        - 2
+      temperature: 0.07
+    sparse_pairs:
+      enabled: true
+      lambda_degree: 1.0
+      lambda_time: 1.0
+      strategy: b
+      topk: 8
+    t_embed_dim: 64
+    t_stride: 20
+  dd_gan:
+    enabled: true
+    lambda_gan: 0.08
+    lambda_r1: 10.0
+    lr_d: 0.0001
+  explain:
+    enabled: true
+    samples: 2
+    tau_low: 0.3
+    tau_high: 0.7
+    gamma: 0.02
+    rumor_classes: [1, 2, 3]
+    source_ids: ""
+    case_selection:
+      enabled: true
+  dataset_overrides:
+    weibo:
+      arbiter:
+        pair_ids: [0, 1]
+      ctdm:
+        regularizers:
+          pair_ids: [0, 1]
+    pheme:
+      arbiter:
+        pair_ids: [0, 1]
+      ctdm:
+        regularizers:
+          pair_ids: [0, 1]
+  adaptation:
+    epochs: 6
+    batch_size: 4
+    lr: 0.0001
+    arbiter_lr: 0.0001
+    ctdm_lr: 0.00003
+    weight_decay: 0.0001
+    ema_decay: 0.995
+    confidence_threshold: 0.80
+    min_samples_per_class: 2
+    pseudo_label_weight: 1.0
+    consistency_weight: 0.15
+    prototype_align_weight: 0.10
+    use_class_reweighting: true
+    logit_adjustment_strength: 0.15
+    ctdm_unfreeze_last_layers: 1
+    consistency_text_dropout: 0.10
+    consistency_text_noise_std: 0.01
+    consistency_edge_drop_rate: 0.10
+    consistency_obs_min: 10
+    consistency_obs_max: 30
+    target_prefix:
+      strategy: minutes
+      minutes: 30
+      include_root: true
+    target_observability:
+      drop_node: 0.05
+      drop_edge: 0.10
+      seed: 1024
+  loss:
+    la_gamma: 2.2
+    la_smooth: 0.05
+    la_tau: 1.0
+    lambda_pair_margin: 0.2
+    lambda_tf_bce: 0.2
+    pair_margin:
+      enabled: true
+      margin: 0.7
+      pair:
+        - 1
+        - 2
+      weight: 0.2
+    pair_margin_enabled: true
+    pair_margin_m: 0.7
+    w_brier: 0.01
+    w_cons: 0.05
+  potentials_dir: rd_potentials
+  seed_scoped_potentials: true
+  potentials_pair:
+    - 0
+    - 1
+  text:
+    backend: sentence-transformers
+    enabled: true
+    fuse_mode: concat
+    model: all-MiniLM-L6-v2
+    text_dim: 384
+    robust_text:
+      noise_std: [0.0, 0.05, 0.1]
+      dropout_p: [0.0, 0.1, 0.2]
+training:
+  amp: true
+  batch_size: 4
+  batch_size_ctdm: 1
+  early_stopping_patience: 5
+  early_stopping_patience_ctdm: 4
+  epochs: 20
+  epochs_ctdm: 12
+  grad_clip: 1.0
+  lr: 0.0003
+  lr_ctdm: 0.0003
+  num_workers: 4
+  use_tqdm: true
+  weight_decay: 0.0001
+  weight_decay_ctdm: 0.0001
+  reuse_ctdm_pretrain: true
+  max_batches_per_epoch:
+  min_epochs: 3
+  min_epochs_ctdm: 3
+  max_samples: 0

@@ -1,0 +1,365 @@
+experiment:
+  seeds: [42]
+
+dataset:
+  name: twitter15
+  root: /share/home/hwxu/Researches/D2Plus/Input/processed_paper_aligned
+  use_lp_edges: false
+  text_normalization:
+    lowercase: true
+    replace_url: true
+    replace_mention: true
+    replace_number: true
+    compress_repeated_chars: true
+    keep_hashtag_text: true
+  text_encoder:
+    model_name_or_path: /share/home/hwxu/Researches/D2Plus/Input/sentence_transformers_all_mpnet_base_v2
+    batch_size: 4
+    cache_tag: mpnet_smoke
+    cache_name: text_embs_mpnet_paper_ready.pt
+    force_text_cache: true
+    normalize_embeddings: true
+    rebuild_cache: false
+  observability_sweep:
+    drop_node: []
+    drop_edge: []
+  prefix:
+    strategy: minutes
+    unit: minutes
+    window: 60
+    minutes: 60
+    k:
+    include_root: true
+    window_overrides:
+      weibo: 3
+      pheme: 3
+    unit_overrides:
+      weibo: hop
+      pheme: hop
+  observability:
+    drop_edge: 0.0
+    drop_node: 0.0
+    seed: 1024
+
+device:
+  force_cpu: false
+  gpu_id: 0
+  type: cuda
+
+evaluation:
+  ece_bins: 15
+  class_names:
+    0: non-rumor
+    1: 'true'
+    2: 'false'
+    3: unverified
+  detailed: true
+  class_names_overrides:
+    weibo:
+      0: non-rumor
+      1: rumor
+    pheme:
+      0: non-rumor
+      1: rumor
+  max_samples: 1
+  export_predictions:
+    enabled: true
+  latency:
+    enabled: true
+    repeat: 1
+    warmup_batches: 0
+    max_batches: 1
+  significance:
+    enabled: false
+    baseline_models: []
+    metrics: [macro_f1, acc]
+    n_bootstrap: 100
+  early_observation:
+    default_windows: [10]
+    default_unit: minutes
+    windows_overrides:
+      weibo: [1]
+      pheme: [1]
+    unit_overrides:
+      weibo: hop
+      pheme: hop
+
+link_prediction:
+  dropout: 0.3
+  early_stopping_patience: 5
+  epochs: 10
+  grad_clip: 1.0
+  heads: 2
+  hidden: 128
+  lr: 0.0003
+  num_layers: 3
+  num_workers: 0
+  topk_per_node: 2
+  weight_decay: 0.0
+
+outputs:
+  ckpt_dir: /share/home/hwxu/Researches/D2Plus/Output/ckpts/smoke_paper_aligned_mpnet
+  dir: /share/home/hwxu/Researches/D2Plus/Output/smoke_paper_aligned_mpnet/twitter15
+  log_dir: /share/home/hwxu/Researches/D2Plus/Output/logs/smoke_paper_aligned_mpnet
+  results_dir: /share/home/hwxu/Researches/D2Plus/Output/results/smoke_paper_aligned_mpnet
+  prediction_csv: /share/home/hwxu/Researches/D2Plus/Output/results/smoke_paper_aligned_mpnet/predictions.csv
+  revision_artifacts_csv: /share/home/hwxu/Researches/D2Plus/Output/results/smoke_paper_aligned_mpnet/revision_artifacts.csv
+
+sbatch:
+  job_prefix: DPlus
+  conda_env: hw
+  profiles:
+    benchmark:
+      partition: gpu1
+      nodelist: gpu03
+      gres: "gpu:1"
+      cpus_per_task: 4
+      mem: 16G
+      log_dir: /share/home/hwxu/Researches/D2Plus/Output/logs/smoke_paper_aligned_mpnet
+    rumordiffusion_train:
+      partition: gpu1
+      nodelist: gpu03
+      gres: "gpu:1"
+      cpus_per_task: 4
+      mem: 16G
+      log_dir: /share/home/hwxu/Researches/D2Plus/Output/logs/smoke_paper_aligned_mpnet
+    transfer:
+      partition: gpu1
+      nodelist: gpu03
+      gres: "gpu:1"
+      cpus_per_task: 4
+      mem: 16G
+      log_dir: /share/home/hwxu/Researches/D2Plus/Output/logs/smoke_paper_aligned_mpnet
+    ablation:
+      partition: gpu1
+      nodelist: gpu03
+      gres: "gpu:1"
+      cpus_per_task: 4
+      mem: 16G
+      log_dir: /share/home/hwxu/Researches/D2Plus/Output/logs/smoke_paper_aligned_mpnet
+    hparam:
+      partition: gpu1
+      nodelist: gpu03
+      gres: "gpu:1"
+      cpus_per_task: 4
+      mem: 16G
+      log_dir: /share/home/hwxu/Researches/D2Plus/Output/logs/smoke_paper_aligned_mpnet
+
+transfer:
+  mode: source_only
+  pairs:
+    - source: twitter15
+      target: twitter16
+  models:
+    - Libs/configs/baselines/rumordiffusion.yaml
+  ckpt_name: best.pt
+  lp_edges_policy: require_existing
+  results_path: /share/home/hwxu/Researches/D2Plus/Output/results/smoke_paper_aligned_mpnet/transfer.csv
+  adaptation:
+    target_split: train
+    selection_split: val
+    adapt_ckpt_name: best_target_adapt.pt
+
+rumordiffusion:
+  checkpoint:
+    validate_metadata: true
+    allow_legacy: false
+    ctdm_subdir: rumordiffusion_ctdm_mpnet
+  evaluation:
+    uncertainty:
+      sampling: stochastic_reverse
+      potential_readout: sampled_full_graph
+    early_observation:
+      default_windows: [10]
+      default_unit: minutes
+      windows_overrides:
+        weibo: [1]
+        pheme: [1]
+      unit_overrides:
+        weibo: hop
+        pheme: hop
+    early_stop:
+      enabled: true
+      samples: 1
+      max_batches: 1
+      tau_low: 0.3
+      tau_high: 0.7
+      gamma: 0.02
+      rumor_classes: [1, 2, 3]
+    sampling_sweep:
+      enabled: true
+      samples: [1, 2, 4]
+      max_batches: 1
+    threshold_sweep:
+      enabled: false
+      samples: 1
+      tau_low: []
+      tau_high: []
+      gamma: []
+      max_batches: 1
+    robustness:
+      edge_dropout: []
+    calibration:
+      enabled: true
+      type: temperature
+      fit_split: val
+      ece_bins: 15
+      max_iter: 20
+      lr: 0.05
+      init_temp: 1.0
+  arbiter:
+    dropout: 0.3
+    freeze_ctdm: true
+    hidden: 256
+    input_norm: true
+    readout: cls
+    token_norm: layernorm
+    token_dropout: 0.3
+    pair_ids: [1, 2]
+    tf_head_enabled: true
+    tf_infer_adjust_alpha: 0.15
+    uncertainty_force_ctdm: true
+    transformer:
+      dim_feedforward: 512
+      dropout: 0.3
+      nhead: 8
+      nlayers: 3
+    type: transformer
+    use_pair_token: true
+  ctdm:
+    T: 50
+    backbone:
+      aggregators: [mean, min, max, std]
+      dropout: 0.3
+      heads: 8
+      name: gat
+      scalers: [identity, amplification, attenuation]
+    dropout: 0.3
+    film_hidden: 128
+    guidance_p: 0.2
+    guidance_scale: 3.0
+    sampling_eta: 1.0
+    hidden: 256
+    max_nodes: 0
+    multiwindow:
+      enabled: true
+      max: 30
+      min: 10
+    num_layers: 3
+    obs_minutes: 30
+    regularizers:
+      lambda_deg_kl: 0.07
+      lambda_proto: 0.10
+      lambda_proto_orth: 0.10
+      lambda_supcon_pair: 0.15
+      lambda_topo_bce: 0.10
+      momentum: 0.9
+      pair_ids: [1, 2]
+      temperature: 0.07
+    sparse_pairs:
+      enabled: true
+      lambda_degree: 1.0
+      lambda_time: 1.0
+      strategy: b
+      topk: 8
+    t_embed_dim: 64
+    t_stride: 20
+  dd_gan:
+    enabled: true
+    lambda_gan: 0.08
+    lambda_r1: 10.0
+    lr_d: 0.0001
+  explain:
+    enabled: true
+    samples: 1
+    tau_low: 0.3
+    tau_high: 0.7
+    gamma: 0.02
+    rumor_classes: [1, 2, 3]
+    source_ids: ""
+    case_selection:
+      enabled: true
+  dataset_overrides:
+    weibo:
+      arbiter:
+        pair_ids: [0, 1]
+      ctdm:
+        regularizers:
+          pair_ids: [0, 1]
+    pheme:
+      arbiter:
+        pair_ids: [0, 1]
+      ctdm:
+        regularizers:
+          pair_ids: [0, 1]
+  adaptation:
+    epochs: 1
+    batch_size: 1
+    target_max_samples: 1
+    selection_max_samples: 1
+    lr: 0.0001
+    arbiter_lr: 0.0001
+    ctdm_lr: 0.00003
+    weight_decay: 0.0001
+    ema_decay: 0.99
+    confidence_threshold: 0.0
+    min_samples_per_class: 1
+    pseudo_label_weight: 1.0
+    consistency_weight: 0.10
+    prototype_align_weight: 0.05
+    use_class_reweighting: true
+    logit_adjustment_strength: 0.10
+    ctdm_unfreeze_last_layers: 1
+    consistency_text_dropout: 0.05
+    consistency_text_noise_std: 0.0
+    consistency_edge_drop_rate: 0.05
+    consistency_obs_min: 10
+    consistency_obs_max: 30
+    target_prefix:
+      strategy: minutes
+      minutes: 30
+      include_root: true
+    target_observability:
+      drop_node: 0.0
+      drop_edge: 0.0
+      seed: 1024
+  loss:
+    la_gamma: 2.2
+    la_smooth: 0.05
+    la_tau: 1.0
+    lambda_pair_margin: 0.2
+    lambda_tf_bce: 0.2
+    pair_margin_enabled: true
+    pair_margin_m: 0.7
+    w_brier: 0.01
+    w_cons: 0.05
+  potentials_dir: rd_potentials
+  seed_scoped_potentials: true
+  potentials_pair: [0, 1, 2, 3]
+  text:
+    backend: sentence-transformers
+    enabled: true
+    fuse_mode: concat
+    model: all-mpnet-base-v2
+    text_dim: 768
+    robust_text:
+      noise_std: []
+      dropout_p: []
+
+training:
+  amp: true
+  batch_size: 1
+  batch_size_ctdm: 1
+  early_stopping_patience: 1
+  epochs: 1
+  epochs_ctdm: 1
+  grad_clip: 1.0
+  lr: 0.0003
+  lr_ctdm: 0.0003
+  num_workers: 0
+  use_tqdm: true
+  weight_decay: 0.0001
+  weight_decay_ctdm: 0.0001
+  max_batches_per_epoch: 1
+  min_epochs: 1
+  max_samples: 1

@@ -1,0 +1,52 @@
+experiment:
+  datasets: [twitter15, twitter16, weibo, pheme]
+  output_dir: Output/motivation
+  seeds: [42, 43, 44]
+  # 控制运行哪些实验：nodecount, timecutoff, 或 both
+  run_experiments: both
+
+# 实验1：基于节点数量
+nodecount:
+  mature_min_nodes: [150, 200]      # 成熟阶段最小节点数扫描
+  early_max_nodes: [10, 15, 20]     # 早期阶段最大节点数扫描
+
+# 实验2：基于时间截断
+timecutoff:
+  mature_min_nodes: [30, 50]        # 成熟阶段最小节点数（过滤太小的图）
+  early_cutoff_minutes: [20, 30, 45]   # 早期阶段时间截断（分钟）
+
+gae:
+  in_channels: 4             # 结构特征维度
+  hidden_channels: 64
+  out_channels: 128          # 嵌入维度
+  epochs: 150
+  lr: 0.001
+  train_ratio: 0.8
+  device: cpu                # cuda或cpu
+  linear_probe:
+    type: logistic           # logistic / linear_svm
+    max_iter: 200
+    C: 1.0
+
+visualization:
+  figsize: [8, 6]
+  dpi: 300
+  perplexity: 30
+  max_iter: 1000
+  random_state: 42
+  colors:
+    0: '#FF6B6B'             # 类别0（如false）- 红色
+    1: '#4ECDC4'             # 类别1（如true）- 青色
+    2: '#95E1D3'             # 类别2（如unverified）- 浅青
+    3: '#F38181'             # 类别3（如non-rumor）- 粉红
+  markers:
+    0: 'o'
+    1: '^'
+    2: 's'
+    3: 'D'
+  alpha: 0.6
+  legend_labels:
+    0: 'False'
+    1: 'True'
+    2: 'Unverified'
+    3: 'Non-rumor'

@@ -1,0 +1,7 @@
+name: tgat
+model:
+  hidden: 64
+  heads: 4
+  num_layers: 3
+  dropout: 0.3
+  time_normalization: per_graph_max

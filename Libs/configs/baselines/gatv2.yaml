@@ -1,0 +1,6 @@
+name: gatv2
+model:
+  hidden: 64
+  num_layers: 2
+  heads: 4
+  dropout: 0.3

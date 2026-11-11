@@ -1,0 +1,53 @@
+base_config: exp_rumordiffusion_sota_search.yaml
+
+model_cfg: Libs/configs/baselines/rumordiffusion_sota_candidate.yaml
+
+multi_run:
+  datasets: [twitter15, twitter16, pheme]
+
+experiment:
+  seeds: [42, 3407]
+
+evaluation:
+  max_samples: 0
+  max_batches:
+  early_observation:
+    default_windows: [10, 20, 30]
+    default_unit: minutes
+    windows_overrides:
+      weibo: [1, 2, 3]
+      pheme: [1, 2, 3]
+    unit_overrides:
+      weibo: hop
+      pheme: hop
+
+outputs:
+  ckpt_dir: /share/home/hwxu/Researches/D2Plus/Output/ckpts/rumordiffusion_sota_search/screening
+  dir: /share/home/hwxu/Researches/D2Plus/Output/rumordiffusion_sota_search/screening
+  log_dir: /share/home/hwxu/Researches/D2Plus/Output/logs/rumordiffusion_sota_search/screening
+  results_dir: /share/home/hwxu/Researches/D2Plus/Output/results/rumordiffusion_sota_search/screening
+  prediction_csv: /share/home/hwxu/Researches/D2Plus/Output/results/rumordiffusion_sota_search/screening/predictions.csv
+  revision_artifacts_csv: /share/home/hwxu/Researches/D2Plus/Output/results/rumordiffusion_sota_search/screening/revision_artifacts.csv
+
+sbatch:
+  profiles:
+    rumordiffusion_train:
+      log_dir: /share/home/hwxu/Researches/D2Plus/Output/logs/rumordiffusion_sota_search/screening
+    transfer:
+      log_dir: /share/home/hwxu/Researches/D2Plus/Output/logs/rumordiffusion_sota_search/screening
+
+training:
+  amp: false
+  batch_size: 4
+  batch_size_ctdm: 1
+  epochs: 40
+  epochs_ctdm: 20
+  early_stopping_patience: 8
+  early_stopping_patience_ctdm: 6
+  min_epochs: 10
+  min_epochs_ctdm: 5
+  max_samples: 512
+  max_batches_per_epoch: 64
+  max_batches_per_epoch_ctdm: 64
+  reuse_ctdm_pretrain: false
+  fail_on_nonfinite: true

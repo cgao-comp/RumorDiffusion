@@ -1,0 +1,42 @@
+name: dga_fake
+model:
+  # Core dimensions
+  hidden: 128           # d in the spec
+  text_dim: 768         # sentence-transformer output dim
+  content_dropout: 0.1
+
+  # Sequence encoder (history)
+  seq_layers: 2
+  seq_heads: 4
+  seq_dropout: 0.1
+  max_seq_len: 64
+
+  # Diffusion
+  T: 200
+  beta_start: 0.0001
+  beta_end: 0.02
+  cond_drop: 0.1
+  guidance_scale: 3.0
+  lambda_diff: 0.1
+  step_embed_type: learned
+
+  # Generator sampling
+  generator_loops: 4       # D in Algorithm 2
+  max_gen_per_graph: 200   # cap generated sequences per news
+  topk: 5                  # retrieval candidates
+  max_chain_len: 6         # autoregressive depth to avoid blow-up
+
+  # User embedding
+  num_users: 500000        # hashed vocabulary size
+
+  # Detector
+  hypergat_hidden: 128
+  hypergat_layers: 1
+  gat_hidden: 128
+  gat_layers: 1
+  detector_dropout: 0.2
+  cls_hidden: 256
+
+  # Training helpers
+  grad_clip: 1.0
+  use_amp: false

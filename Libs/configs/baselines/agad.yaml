@@ -1,0 +1,14 @@
+name: agad
+model:
+  hidden: 64
+  heads: 4
+  num_layers: 3
+  dropout: 0.3
+  projection_dim: 128
+  contrastive_weight: 0.1
+  prototype_weight: 0.1
+  adversarial_weight: 0.1
+  adversarial_epsilon: 0.05
+  contrastive_temperature: 0.1
+  prototype_temperature: 0.07
+  prototype_logit_weight: 0.2

@@ -1,0 +1,185 @@
+name: rumordiffusion
+model:
+  ctdm:
+    hidden: 256
+    num_layers: 3
+    dropout: 0.3
+    T: 200
+    t_stride: 20
+    obs_minutes: 30
+    t_embed_dim: 128
+    film_hidden: 128
+    max_nodes: 0
+    guidance_scale: 3.0
+    guidance_p: 0.2
+    sampling_eta: 1.0
+    backbone:
+      name: gat
+      dropout: 0.2
+      heads: 8
+    regularizers:
+      lambda_proto: 0.10
+      temperature: 0.07
+      momentum: 0.99
+      lambda_topo_bce: 0.07
+      lambda_deg_kl: 0.07
+  structure_dropout:
+    edge: 0.05
+  forecast:
+    enabled: true
+    dim: 2
+    weight: 0.05
+    text:
+      enabled: true
+      text_dim: 768
+      fuse_mode: concat
+      robust_text:
+        noise_std: [0.0, 0.05, 0.1]
+        dropout_p: [0.0, 0.1, 0.2]
+    multiwindow:
+      enabled: true
+      min: 10
+      max: 30
+    sparse_pairs:
+      enabled: true
+      strategy: b
+      topk: 8
+  arbiter:
+    hidden: 256
+    dropout: 0.3
+    readout: cls
+    token_norm: layernorm
+    token_dropout: 0.3
+    type: transformer
+    freeze_ctdm: true
+    use_pair_token: true
+    pair_token_mode: diff
+    pair_ids: [1, 2]
+    tf_head_enabled: true
+    tf_infer_adjust_alpha: 0.2
+    class_embed_mode: concat_proj
+    cache_potentials: false
+    infer_amp: true
+    uncertainty_force_ctdm: true
+    prototype_residual:
+      enabled: false
+      temperature: 0.07
+      momentum: 0.95
+      logit_weight: 0.0
+      min_count: 1
+    semantic_residual:
+      enabled: false
+      use_root: true
+      use_text: true
+      dropout: 0.2
+      logit_weight: 0.0
+    posterior_aggregation:
+      enabled: false
+      samples: 1
+      mode: mean_logits
+      force_ctdm: false
+      stochastic: false
+    # Optional class embedding to enhance class-awareness (disabled by default for stability)
+    use_class_embedding: false
+    transformer:
+      nhead: 8
+      nlayers: 2
+      dim_feedforward: 512
+      dropout: 0.3
+  potentials_pair: [0, 1, 2, 3]
+  loss:
+    enable_pair_margin_loss: true
+    enable_multi_pair_margin: true
+    enable_tf_head_loss: true
+    loss_logging: false
+    lambda_diffusion: 0.0
+    # Original pair margin loss for true/false discrimination
+    pair_margin_enabled: true
+    pair_margin_m: 0.7
+    lambda_pair_margin: 0.2
+    # Multi-pair margin loss for handling additional confusable class pairs
+    # Configured to help distinguish non-rumor from true, and unverified from false
+    multi_pair_margin_enabled: true
+    multi_pair_margin_list: [[0, 1], [3, 2]]
+    multi_pair_margin_values: [0.5, 0.5]
+    lambda_multi_pair_margin: 0.08
+    # Enhanced focal loss with moderate gamma for balanced focus
+    lambda_tf_bce: 0.2
+    la_tau: 1.0
+    la_gamma: 2.2
+    la_smooth: 0.05
+    w_brier: 0.01
+    w_cons: 0.05
+  dd_gan:
+    enabled: true
+    enable: true
+    lambda_gan: 0.12
+    lr_d: 1.0e-4
+    lambda_r1: 10.0
+evaluation:
+  uncertainty:
+    sampling: stochastic_reverse
+    potential_readout: sampled_full_graph
+  early_observation:
+    default_windows: [10, 20, 30]
+    default_unit: minutes
+    windows_overrides:
+      weibo: [1, 2, 3]
+      pheme: [1, 2, 3]
+    unit_overrides:
+      weibo: hop
+      pheme: hop
+  early_stop_overrides:
+    weibo:
+      rumor_classes: [1]
+      tau_low: 0.3
+      tau_high: 0.7
+      samples: 4
+    pheme:
+      rumor_classes: [1]
+      tau_low: 0.3
+      tau_high: 0.7
+      samples: 4
+  calibration:
+    enabled: true
+    type: temperature
+    fit_split: val
+    ece_bins: 15
+    max_iter: 75
+    lr: 0.05
+    init_temp: 1.0
+  early_stop:
+    enabled: true
+    samples: 2
+    max_batches: 0
+    tau_low: 0.3
+    tau_high: 0.7
+    gamma: 0.02
+    rumor_classes: [1, 2, 3]
+  sampling_sweep:
+    enabled: true
+    windows: [10]
+    samples: [1, 2, 4, 8]
+    max_batches: 0
+  threshold_sweep:
+    enabled: true
+    samples: 2
+    tau_low: [0.2, 0.3, 0.4]
+    tau_high: [0.6, 0.7, 0.8]
+    gamma: [0.01, 0.02, 0.05]
+    display:
+      - tau_low: 0.2
+        tau_high: 0.6
+        gamma: 0.02
+      - tau_low: 0.3
+        tau_high: 0.7
+        gamma: 0.02
+      - tau_low: 0.4
+        tau_high: 0.8
+        gamma: 0.02
+    max_batches: 0
+  robustness:
+    edge_dropout: [0.0, 0.1]
+checkpoint:
+  validate_metadata: true
+  allow_legacy: false

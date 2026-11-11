@@ -1,0 +1,4 @@
+name: root_pool
+model:
+  hidden: 128
+  dropout: 0.3

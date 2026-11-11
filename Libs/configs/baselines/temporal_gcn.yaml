@@ -1,0 +1,5 @@
+name: temporalgcn
+model:
+  hidden: 128
+  num_layers: 2
+  dropout: 0.3

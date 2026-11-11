@@ -1,0 +1,20 @@
+name: rumordiffusion_posterior_prototype
+model: {}
+rumordiffusion_overrides:
+  checkpoint:
+    ctdm_subdir: rumordiffusion_ctdm_sota_posterior_prototype
+  ctdm:
+    sampling_eta: 0.0
+  arbiter:
+    prototype_residual:
+      enabled: true
+      temperature: 0.07
+      momentum: 0.95
+      logit_weight: 0.25
+      min_count: 1
+    posterior_aggregation:
+      enabled: true
+      samples: 4
+      mode: mean_logits
+      force_ctdm: true
+      stochastic: false

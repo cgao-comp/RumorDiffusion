@@ -1,0 +1,36 @@
+protocol_id: rumordiffusion_canonical_v1
+rq1:
+  datasets: [twitter15, twitter16, weibo, pheme]
+  models: [textonly, bigcn, tgat, lp_gcn, dga_fake, agad, hpcl_cascade, tpso, rumordiffusion]
+  seeds: [42, 3407, 126, 218, 91]
+  report_split: test
+  prediction_first: true
+rq2:
+  twitter_horizons: [10, 20, 30]
+  graph_horizons: [1, 2, 3]
+  calibration_fit_split: val
+  factorial_seed_config: factorial_seeds.yaml
+rq3:
+  ablations:
+    - full_canonical
+    - without_regularization
+    - without_pair_aware_loss
+    - without_temporal_input
+    - without_text_input
+    - without_temperature_scaling
+    - deterministic_single_trajectory
+    - class_agnostic_ctdm
+    - prefix_encoder_classifier
+rq4:
+  sampling_S: [1, 2, 4, 8]
+  threshold_fit_split: val
+  latency_same_hardware: true
+  controls: selective_controls/default.yaml
+rq5:
+  source_only_pairs:
+    - [twitter15, twitter16]
+    - [weibo, pheme]
+  stress_pairs:
+    - [twitter16, twitter15]
+    - [pheme, weibo]
+  target_label_tuning: false

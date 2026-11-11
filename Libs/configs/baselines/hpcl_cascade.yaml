@@ -1,0 +1,16 @@
+name: hpcl_cascade
+model:
+  hidden: 128
+  num_layers: 2
+  dropout: 0.3
+  projection_dim: 128
+  text_dim: 0
+  use_text: true
+  prototypes_per_class: 2
+  contrastive_weight: 0.1
+  prototype_weight: 0.1
+  contrastive_temperature: 0.2
+  prototype_temperature: 0.07
+  prototype_logit_weight: 0.2
+  curriculum_warmup_epochs: 10
+  curriculum_min_weight: 0.2

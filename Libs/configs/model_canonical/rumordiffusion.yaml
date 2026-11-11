@@ -1,0 +1,24 @@
+base_config: ../baselines/rumordiffusion.yaml
+name: rumordiffusion
+variant: canonical
+model:
+  ctdm:
+    prototype_residual:
+      enabled: false
+    semantic_residual:
+      enabled: false
+  arbiter:
+    freeze_ctdm: true
+    prototype_residual:
+      enabled: false
+    semantic_residual:
+      enabled: false
+    posterior_aggregation:
+      enabled: false
+      samples: 1
+  joint_finetuning:
+    enabled: false
+  sota_search: false
+checkpoint:
+  validate_metadata: true
+  allow_legacy: false
