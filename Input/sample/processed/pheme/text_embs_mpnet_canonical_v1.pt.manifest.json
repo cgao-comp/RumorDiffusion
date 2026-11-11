@@ -1,0 +1,10 @@
+{
+  "dtype": "float32",
+  "embedding_dimension": 768,
+  "encoder_name": "/share/home/hwxu/Researches/D2Plus/Input/sentence_transformers_all_mpnet_base_v2",
+  "normalization_config_sha256": "e6e2731a14185d2a280261fcac1b9829553c9aa6886ed384c0bef3dd8625f118",
+  "normalized_text_sha256": "a48160e17824dc4dbfe123180d83bdf96467e69c97b021414ec267a3b0448c48",
+  "source_id_sha256": "6714a5d4eca4155645f40b12124c933282308242a116617ea7cb61b0889e2691",
+  "tokenizer_sha256": "6faed91e190bd499e942a09ab374ba2bcec438328cc7e5bb4ee3ef0b3982b977",
+  "weights_sha256": "d7ae2eee47dec42a8d5e5caa619c3f24fdad40702fe787b1dd2d4999bfc41fcd"
+}

@@ -1,0 +1,76 @@
+{
+  "dataset": "pheme",
+  "generation_command": "prepare_canonical_inputs.py --exp Libs/configs/exp_sample.yaml --dataset-config Libs/configs/dataset_sample.yaml",
+  "processed_manifest_sha256": "13bd4a703f0aaf277fab848e88c6ff2a3366579683ce47a55bf9eea219e50b33",
+  "raw_manifest_sha256": "8797297a265eb1ba4d872f2f1c3b6fd09110a1f62361a3b8597f42b76646dc59",
+  "sample_count": 32,
+  "schema_version": "1",
+  "source_id_sha256": "2030c929812953625a1efd2bda372665a6bcbaae9c7659ac1dea674ba72fcd68",
+  "split_seed": 42,
+  "split_strategy": "stratified",
+  "splits": {
+    "test": {
+      "class_distribution": {
+        "0": 4,
+        "1": 4
+      },
+      "sample_count": 8,
+      "source_id_sha256": "d9799d50a918a1b9564ff89efe95ab142ca6277e8c0a3416e9fb9c7c03c13d01",
+      "source_ids": [
+        "498259903962570752",
+        "544410895602839552",
+        "552807071054184448",
+        "552846938677059586",
+        "498293668655423488",
+        "580330721719508992",
+        "524983325275197440",
+        "524961908903149568"
+      ]
+    },
+    "train": {
+      "class_distribution": {
+        "0": 8,
+        "1": 8
+      },
+      "sample_count": 16,
+      "source_id_sha256": "395addb6bd2858ea7025b3e4099ef18ba239aa6a5d19e1ffe3e8cf6a66784728",
+      "source_ids": [
+        "552803757864787968",
+        "524931083797004288",
+        "553581668142153729",
+        "524937675115999232",
+        "580329153553141760",
+        "544287332061298688",
+        "581248880098086912",
+        "552841583251701761",
+        "552785375161499649",
+        "581047170637381632",
+        "544446282559799296",
+        "552806117328568321",
+        "576552070456741888",
+        "524948268355051520",
+        "552984502063337472",
+        "552816600995614721"
+      ]
+    },
+    "val": {
+      "class_distribution": {
+        "0": 4,
+        "1": 4
+      },
+      "sample_count": 8,
+      "source_id_sha256": "648163c36f0ad5b0c75115385eeebaa96b812e9446fcc1b1bc200ed02df822fc",
+      "source_ids": [
+        "544416937178976256",
+        "580347646465949696",
+        "552792131447037952",
+        "552819824007872512",
+        "525023057526947840",
+        "529742159352975362",
+        "524943504192311296",
+        "544274585697280000"
+      ]
+    }
+  },
+  "splits_sha256": "4f3cd32ff2cbb4cc1061c4ecf098fd3eb81725d030eb8bf7b3031574d371566b"
+}

@@ -1,0 +1,16 @@
+{
+  "allowed": [
+    "non-rumor",
+    "rumor"
+  ],
+  "dataset": "pheme",
+  "mapping": {
+    "non-rumor": 0,
+    "rumor": 1
+  },
+  "mapping_sha256": "ae74af516d75fa09616b906da9abf126ff3c8b979d9a795e9ea22872a64a1d96",
+  "num_classes": 2,
+  "numeric": true,
+  "schema_version": "1",
+  "skip_unknown": true
+}

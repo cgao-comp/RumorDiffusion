@@ -1,0 +1,16 @@
+{
+  "class_distribution": {
+    "0": 16,
+    "1": 16
+  },
+  "data_sha256": "1d7b35117554d644340df6aef26bb5689f0024a2d3a3234c266ad043bb79d183",
+  "dataset": "pheme",
+  "label_schema_sha256": "ae3fed2b3344769dd7a5e9b12bb4c2fe389b6ff1d52d20aeb3ad540c0d0a37cb",
+  "processed_root": "/share/home/hwxu/Researches/D2Plus/Input/sample/processed/pheme",
+  "raw_manifest_sha256": "8797297a265eb1ba4d872f2f1c3b6fd09110a1f62361a3b8597f42b76646dc59",
+  "sample_count": 32,
+  "schema_version": "1",
+  "slices_sha256": "56ec8c80695815afa97e3746667062cab635092ae6c560f33f2c0cbcfd5bb2a1",
+  "source_id_sha256": "2030c929812953625a1efd2bda372665a6bcbaae9c7659ac1dea674ba72fcd68",
+  "time_unit": "hop"
+}
