@@ -1,0 +1,60 @@
+{
+    "source": {
+        "content": "我不炫耀，因为我不自卑。我不花心，因为我不缺爱。——人性就是这样，自卑才炫耀，缺爱才花心。你的招摇，除了证明内心虚弱，说明不了任何东西！",
+        "user id": 2084348103,
+        "tweet id": "3909708618442913",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "因为自卑才炫耀，因为缺爱才花心。",
+            "user id": 2799125447,
+            "user name": "宫书墨Mo",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "@我还在这里等着你dear ",
+            "user id": 5715179061,
+            "user name": "惜颜若玉",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "说的很好",
+            "user id": 1776852007,
+            "user name": "緈緮淂丫丫",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 3,
+            "parent": -1,
+            "children": [],
+            "content": "每天多一点努力",
+            "user id": 5382378169,
+            "user name": "如是杨柳",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 4,
+            "state_1": 0
+        }
+    }
+}

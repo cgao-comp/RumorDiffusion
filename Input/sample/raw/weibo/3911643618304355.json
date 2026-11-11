@@ -1,0 +1,60 @@
+{
+    "source": {
+        "content": "精致好吃的家常菜，家里请客吃饭必备！",
+        "user id": 3613440743,
+        "tweet id": "3911643618304355",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "[馋嘴]",
+            "user id": 2882946890,
+            "user name": "睫毛F啡",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "我是标准吃货一枚",
+            "user id": 5764963184,
+            "user name": "加油Elina",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "😍😍😍",
+            "user id": 3037892244,
+            "user name": "疯一样的西瓜君",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 3,
+            "parent": -1,
+            "children": [],
+            "content": "吃货",
+            "user id": 5752399937,
+            "user name": "小小小锅米线",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 4,
+            "state_1": 0
+        }
+    }
+}

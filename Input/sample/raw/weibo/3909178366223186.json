@@ -1,0 +1,60 @@
+{
+    "source": {
+        "content": "对于手好看的男生没有抵抗力啊啊啊啊(〃∀〃)",
+        "user id": 5291032498,
+        "tweet id": "3909178366223186",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "我哥哥的手好看啊[转发]",
+            "user id": 5675943848,
+            "user name": "-Chriseian-",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "同感！",
+            "user id": 5759927904,
+            "user name": "甄萌萌kkj",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "[色][色][色]",
+            "user id": 5366023082,
+            "user name": "酱汁妹妹",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 3,
+            "parent": -1,
+            "children": [],
+            "content": "[色]",
+            "user id": 5690272979,
+            "user name": "余烬杞楛",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 4,
+            "state_1": 0
+        }
+    }
+}

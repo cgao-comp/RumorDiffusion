@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "别和往事过不去，因为它已经过去， 别和现实过不去，因为你还要过下去。",
+        "user id": 2084348103,
+        "tweet id": "3907730051761362",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "别和自己过不去，因为你总要过下去。 别和别人过不去，因为他/她总会过去。",
+            "user id": 5460943670,
+            "user name": "精神病与healer",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "可不是",
+            "user id": 5733489167,
+            "user name": "霹雳小魔女NIlLANYING",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "生活还是要继续",
+            "user id": 5603355881,
+            "user name": "甫哥1990",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 3,
+            "state_1": 0
+        }
+    }
+}

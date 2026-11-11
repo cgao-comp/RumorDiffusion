@@ -1,0 +1,71 @@
+{
+    "source": {
+        "content": "在很多时候，往往就是因为你要的太少，别人才索性什么都不给你，结果你一无所有。所以，想要什么，都得靠自己努力，永远都是这样。",
+        "user id": 2703907413,
+        "tweet id": "3908278138535984",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "转发微博",
+            "user id": 5745402172,
+            "user name": "Cc04261223",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "早上好，天气依旧阴沉",
+            "user id": 1909635117,
+            "user name": "槎一些",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "是 很多时候 因为自尊与要强 才没有了公主礼遇",
+            "user id": 3917559797,
+            "user name": "希存1226",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 3,
+            "parent": -1,
+            "children": [],
+            "content": "对的，只有自己努力得到的东西才不会跑",
+            "user id": 1622268604,
+            "user name": "BestLover锋",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 4,
+            "parent": -1,
+            "children": [],
+            "content": "千万别慢待自己！",
+            "user id": 5327937459,
+            "user name": "一辉0821",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 5,
+            "state_1": 0
+        }
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "source": {
+        "content": "#新浪独家#【胡耀邦文选出版，领导人出文选有啥门道？】昨天，《胡耀邦文选》出版发行。新闻极客梳理发现，毛泽东、邓小平和江泽民等人的文选是在世出版，毛还亲自编辑过毛选四卷。周恩来、刘少奇等人，则在去世后选集才出版 。领导人出文选的政治含义是什么？详见：http://t.cn/RUmcVnL",
+        "user id": 1618051664,
+        "tweet id": "3911221994204571",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "@青海吃喝玩乐网 @青海高速交警 @青海共青团 @青海经视百姓1时间 ",
+            "user id": 3983733017,
+            "user name": "过日子网",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "填补中国历史的某些空白。",
+            "user id": 2432120530,
+            "user name": "Aaron东",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "[威武][威武]",
+            "user id": 2471070063,
+            "user name": "观鑫泉州",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 3,
+            "parent": -1,
+            "children": [
+                4
+            ],
+            "content": "转发微博",
+            "user id": 1709405635,
+            "user name": "邱震海",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 4,
+            "parent": 3,
+            "children": [],
+            "content": "8964不提了",
+            "user id": 2621880513,
+            "user name": "王藝彬時評",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 2
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 4,
+            "state_1": 0
+        },
+        "2-hop": {
+            "state_0": 1,
+            "state_1": 0
+        }
+    }
+}

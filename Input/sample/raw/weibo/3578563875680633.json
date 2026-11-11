@@ -1,0 +1,104 @@
+{
+    "source": {
+        "content": "【一个死囚的40分钟 “天价”生命】54岁的美国死囚乔·哈里斯，应在2012年11月27日下午两点执行死刑，死前最后一餐，这家伙吃了大餐还喝了红酒，没想突发脑溢血当场挂了，早死了40分钟。其亲属因此状告监狱，明知高血压还让喝酒，让他丧失了40分钟的美好生命。最后，官司赢了，亲属获赔350万美元。(转)",
+        "user id": 2910563517,
+        "tweet id": "3578563875680633",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "晕。。。",
+            "user id": 3136593427,
+            "user name": "涵大苗",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": " @雁落平沙2013",
+            "user id": 1559458041,
+            "user name": "兜兜kidfun",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "哇哇哇噻[吃惊]",
+            "user id": 2626384590,
+            "user name": "Youth-能纸",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 3,
+            "parent": -1,
+            "children": [],
+            "content": "这....[黑线]",
+            "user id": 2126551724,
+            "user name": "空空道人-不戒",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 4,
+            "parent": -1,
+            "children": [],
+            "content": "好机智",
+            "user id": 2910976832,
+            "user name": "呵呵cjqn9f1gq",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 5,
+            "parent": -1,
+            "children": [],
+            "content": "太厉害了",
+            "user id": 2836738801,
+            "user name": "满地幸福的肮脏",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 6,
+            "parent": -1,
+            "children": [],
+            "content": "转发微博",
+            "user id": 2844621905,
+            "user name": "王明燕爱李炜",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 7,
+            "parent": -1,
+            "children": [],
+            "content": "只能说这个死囚的身份不简单。",
+            "user id": 3125323727,
+            "user name": "守候拐弯处0",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 6,
+            "state_1": 2
+        }
+    }
+}

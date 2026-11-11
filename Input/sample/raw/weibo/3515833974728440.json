@@ -1,0 +1,144 @@
+{
+    "source": {
+        "content": "日前泉州市警察抓到几个拐卖小孩犯罪团伙，现场获救了一名5岁的小孩。因他还小，说不清楚自己家的详细地址和家里的电话。只知道他是云南昭通市人 、如果认识他请转告他家人、如果你不认识你就动动手指头，用几秒钟时间转发一下。小孩天天哭着要回去，实在是太可怜了、尽我们最大的努力让他们一家团圆!",
+        "user id": 2718582072,
+        "tweet id": "3515833974728440",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "有没有人认识啊，帮帮忙吧！",
+            "user id": 3002445452,
+            "user name": "我怎的这么-",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "转发",
+            "user id": 1793676084,
+            "user name": "F_eng_先生",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [
+                4,
+                10
+            ],
+            "content": "转发微博",
+            "user id": 1919562245,
+            "user name": "圣小胖",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 3,
+            "parent": -1,
+            "children": [],
+            "content": "希望家人快点看到",
+            "user id": 3041501435,
+            "user name": "幸运收听者",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 4,
+            "parent": 2,
+            "children": [],
+            "content": "",
+            "user id": 1737059657,
+            "user name": "海盗7号V",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 2
+        },
+        {
+            "comment id": 5,
+            "parent": -1,
+            "children": [],
+            "content": "转起，希望孩子早日回家！",
+            "user id": 2163089952,
+            "user name": "hey_天涯牧马",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 6,
+            "parent": -1,
+            "children": [],
+            "content": "#石狮微救助#",
+            "user id": 2981187834,
+            "user name": "石狮微平台",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 7,
+            "parent": -1,
+            "children": [],
+            "content": "希望小朋友能早日回到父母得怀抱，   世界上拐卖儿童得人能早日得到惩罚",
+            "user id": 2900479341,
+            "user name": "普罗旺斯得熏衣草",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 8,
+            "parent": -1,
+            "children": [],
+            "content": "转发微博",
+            "user id": 2406533710,
+            "user name": "地雷charlie",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 9,
+            "parent": -1,
+            "children": [],
+            "content": "@蓝莓pk草莓",
+            "user id": 2876784312,
+            "user name": "生活有你而精彩OZ",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 10,
+            "parent": 2,
+            "children": [],
+            "content": "请大家相互转发，希望找到小孩父母",
+            "user id": 2895811043,
+            "user name": "dennis_zhe",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 2
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 9,
+            "state_1": 0
+        },
+        "2-hop": {
+            "state_0": 2,
+            "state_1": 0
+        }
+    }
+}

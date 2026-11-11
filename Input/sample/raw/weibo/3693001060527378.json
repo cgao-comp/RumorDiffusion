@@ -1,0 +1,165 @@
+{
+    "source": {
+        "content": "【意大利女部长签字中..... 】（@全球奢侈品总汇）",
+        "user id": 1576214400,
+        "tweet id": "3693001060527378",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "[good]",
+            "user id": 1220961781,
+            "user name": "张三的歌5108",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "还不错。[太开心]",
+            "user id": 2314919240,
+            "user name": "粗眉毛的Dilan",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "公民选出的女干部与官员日后提拔的女干部天差地别！",
+            "user id": 1230835377,
+            "user name": "和平堂主",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 3,
+            "parent": -1,
+            "children": [],
+            "content": "字一签。回房间。啪啪啪。哈哈哈。",
+            "user id": 1293154857,
+            "user name": "莞君S",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 4,
+            "parent": -1,
+            "children": [],
+            "content": "@魔力鸟一族 @小金的男人 @小獅子William @寡妇门前shifei多",
+            "user id": 1250753512,
+            "user name": "杂侃部落",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 5,
+            "parent": -1,
+            "children": [],
+            "content": "时尚意大利......",
+            "user id": 1927267380,
+            "user name": "麦地6",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 6,
+            "parent": -1,
+            "children": [
+                8
+            ],
+            "content": "啊。。。中国自古也是意大利领土啊。。。。。。",
+            "user id": 2760898523,
+            "user name": "包子怂怂嗒",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 7,
+            "parent": -1,
+            "children": [],
+            "content": "[哈哈]",
+            "user id": 1253980003,
+            "user name": "北京石鑫",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 8,
+            "parent": 6,
+            "children": [],
+            "content": "为嘛我只注意到她走光了……",
+            "user id": 1506867472,
+            "user name": "前生一定是书吏",
+            "stance_label": 0,
+            "state": 1,
+            "hop": 2
+        },
+        {
+            "comment id": 9,
+            "parent": -1,
+            "children": [],
+            "content": "我只看到丁丁",
+            "user id": 1428704464,
+            "user name": "妈妈不要去上班",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 10,
+            "parent": -1,
+            "children": [],
+            "content": "[晕][晕][晕]果然很意大利啊",
+            "user id": 1974573515,
+            "user name": "CONG_XIE",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 11,
+            "parent": -1,
+            "children": [],
+            "content": "[偷笑]",
+            "user id": 3168120042,
+            "user name": "晏子嫣_NEVER",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 12,
+            "parent": -1,
+            "children": [],
+            "content": "好干部",
+            "user id": 1775858677,
+            "user name": "hihaochi",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 8,
+            "state_1": 4
+        },
+        "2-hop": {
+            "state_0": 0,
+            "state_1": 1
+        }
+    }
+}
