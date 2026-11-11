@@ -1,0 +1,187 @@
+{
+    "source": {
+        "content": "Being Black in this country is dangerous business. #Ferguson",
+        "user id": 46822887,
+        "tweet id": "498259903962570752",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "@AngryBlackLady *favorites out of frustration*\n\n#thosemomentswhenLikejustdoesntcutit",
+            "user id": 14630261,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "@AngryBlackLady Truth.",
+            "user id": 367234966,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "@AngryBlackLady http://t.co/uUILWJq2fJ",
+            "user id": 21461995,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 3,
+            "parent": -1,
+            "children": [],
+            "content": "@AngryBlackLady I experience mistreatment daily from a myriad of white sales people who request ID &amp; I give them my press pass or univ. ID.",
+            "user id": 730738962,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 4,
+            "parent": -1,
+            "children": [],
+            "content": "@AngryBlackLady @TheObamaDiary It's literally a death sentence.  First it was driving while black, now it's walking while black #Ferguson",
+            "user id": 363221461,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 5,
+            "parent": -1,
+            "children": [],
+            "content": "@AngryBlackLady @HGGolightly So true. But it just should NOT be so! WTF?",
+            "user id": 371412800,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 6,
+            "parent": -1,
+            "children": [],
+            "content": "Yup. And for everyone else not straight, male and white. RT @AngryBlackLady: Being Black in this country is dangerous business. #Ferguson",
+            "user id": 18627369,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 7,
+            "parent": -1,
+            "children": [],
+            "content": "@AngryBlackLady Still a dangerous business, sadly.",
+            "user id": 19825983,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 8,
+            "parent": -1,
+            "children": [],
+            "content": "@AngryBlackLady This is the #NWO implementation strategy 2 incite a race war 2 initiate a #PoliceState.#worlddomination #worldwide #genocide",
+            "user id": 201131228,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 9,
+            "parent": -1,
+            "children": [],
+            "content": "@AngryBlackLady My psych professor wanted the class to pull stunts in public &amp; note the reaction. I told him I wasn't catching bullets.",
+            "user id": 83248658,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 10,
+            "parent": -1,
+            "children": [
+                11
+            ],
+            "content": "@AngryBlackLady Need I even mention the prof's race?",
+            "user id": 83248658,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 11,
+            "parent": 10,
+            "children": [],
+            "content": "@renaissanceeast nope! That is ridiculous.",
+            "user id": 46822887,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 2
+        },
+        {
+            "comment id": 12,
+            "parent": -1,
+            "children": [],
+            "content": "@AngryBlackLady esp if you are a Blk boy or male...",
+            "user id": 169980652,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 13,
+            "parent": -1,
+            "children": [],
+            "content": "@AngryBlackLady I meant...esp if you area blk boy or man",
+            "user id": 169980652,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 14,
+            "parent": -1,
+            "children": [],
+            "content": "@AngryBlackLady Ain't so much just a black thing anymore for a Long Time. I've BEEN to the prisons &amp; its quite equal'd out for us po folks.",
+            "user id": 2402972599,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 12,
+            "state_1": 2
+        },
+        "2-hop": {
+            "state_0": 0,
+            "state_1": 1
+        }
+    }
+}

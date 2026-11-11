@@ -1,0 +1,55 @@
+{
+    "source": {
+        "content": "Helpful for people watching and covering the events in Ottawa today (via @onthemedia). Be safe everyone. #cdnpoli http://t.co/Ud7ISSnsE7",
+        "user id": 16249591,
+        "tweet id": "524937675115999232",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": ".@archiemc @onthemedia Excellent advice, thank you.You are in our prayers",
+            "user id": 17233536,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [
+                2
+            ],
+            "content": "@archiemc @onthemedia good advice for any \"breaking\" news",
+            "user id": 100786433,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": 1,
+            "children": [],
+            "content": "@kingsgatehorses @onthemedia Indeed...",
+            "user id": 16249591,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 2
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 2,
+            "state_1": 0
+        },
+        "2-hop": {
+            "state_0": 1,
+            "state_1": 0
+        }
+    }
+}

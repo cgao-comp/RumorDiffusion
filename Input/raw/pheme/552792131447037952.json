@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "in support of those that have died today in Paris #CharlieHebdo #freedomwillNeverDie http://t.co/FkkDZXChdt",
+        "user id": 228480162,
+        "tweet id": "552792131447037952",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": ".@surfnuttz @LauraHuu http://t.co/9HVMzhBCfw",
+            "user id": 1441847827,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "@surfnuttz @edwardlucas very dumb. Don't count me in.",
+            "user id": 214558609,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "@surfnuttz @arr1910 Prohibido Prohibir!!\ninterdit d'interdire!",
+            "user id": 177699764,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 2,
+            "state_1": 1
+        }
+    }
+}

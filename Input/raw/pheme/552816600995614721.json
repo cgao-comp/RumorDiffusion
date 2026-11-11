@@ -1,0 +1,55 @@
+{
+    "source": {
+        "content": "#CharlieHebdo Stéphane Charbonnier and Jean Cabut died for freedom of press. May their bravery &amp; spirit live forever http://t.co/JBjJicdNbq",
+        "user id": 605283640,
+        "tweet id": "552816600995614721",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "@TurkKick @JCCWatch For that ideal to become true, kind of people who killed them should be fought. I wish slogans alone could achieve it",
+            "user id": 2378914268,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [
+                2
+            ],
+            "content": "@TurkKick @sjfalcigno died to create distracting news , villify muslims and aid netanhanyu's genoside at hands of mossad cia mi6",
+            "user id": 218965318,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": 1,
+            "children": [],
+            "content": "@vaerospace @TurkKick \n\nVillify Muslims? http://t.co/PVb0fjIF56",
+            "user id": 498294115,
+            "user name": "",
+            "stance_label": 1,
+            "state": 0,
+            "hop": 2
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 1,
+            "state_1": 1
+        },
+        "2-hop": {
+            "state_0": 1,
+            "state_1": 0
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "The Australian Muslim community releases a statement with regard to #Sydneysiege http://t.co/TBSBYzD1xd http://t.co/HgHhpuvsWk",
+        "user id": 38400130,
+        "tweet id": "544416937178976256",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "@ChannelNewsAsia",
+            "user id": 600621117,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "@ChannelNewsAsia | Very well articulated. Emotions may run high in the next few days, but it is important to remember not to demagogue.",
+            "user id": 717681763,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "@ChannelNewsAsia @roamingcatalyst wow that's some list",
+            "user id": 2783538092,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 3,
+            "state_1": 0
+        }
+    }
+}

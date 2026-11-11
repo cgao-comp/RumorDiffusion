@@ -1,0 +1,55 @@
+{
+    "source": {
+        "content": "Australian Muslim community releases statement in response to #sydneysiege. http://t.co/r6UMUVGxHV",
+        "user id": 63362429,
+        "tweet id": "544410895602839552",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [
+                1
+            ],
+            "content": "@Y7News @sunriseon7 What a load of Muslim rubbish,bulldoze all mosques and these mongrels that are in them.",
+            "user id": 364735310,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": 0,
+            "children": [],
+            "content": "@DaveHunter4eva @Y7News @sunriseon7 excuse me?",
+            "user id": 127003304,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 2
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "@Y7News @sunriseon7 thankyou",
+            "user id": 2842049059,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 2,
+            "state_1": 0
+        },
+        "2-hop": {
+            "state_0": 0,
+            "state_1": 1
+        }
+    }
+}

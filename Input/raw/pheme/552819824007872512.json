@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "What Charlie Hebdo does, and why terrorists use it as \"a pretext to justify their violence.\" By @emserre, from 2012. http://t.co/BIXn9x5GAp",
+        "user id": 136359464,
+        "tweet id": "552819824007872512",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "@laurenzcollins @emserre “I don’t feel as though I’m killing someone with a pen. I’m not putting lives at risk....\" Gosh.",
+            "user id": 75060487,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "@laurenzcollins @zainabimam @emserre charlie sent to hell. he get reward what he was doing from quite long time.",
+            "user id": 341514179,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "@laurenzcollins @mrjamesob @emserre hi..please check new how to drive demo http://t.co/dDMrUoeMPP &amp; http://t.co/9YyirWvnnF",
+            "user id": 825381050,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 1,
+            "state_1": 2
+        }
+    }
+}

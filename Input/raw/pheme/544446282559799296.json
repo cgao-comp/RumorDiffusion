@@ -1,0 +1,55 @@
+{
+    "source": {
+        "content": "please repost this and stay out of Sydney on New Years, better safe than sorry! http://t.co/hh0PHk55Ps",
+        "user id": 548203324,
+        "tweet id": "544446282559799296",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "@emilywby",
+            "user id": 935740820,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [
+                2
+            ],
+            "content": "@emilywby @rohini__ not buying this. If they were real ISIS members, wouldn't it be smart of them to keep the attack a secret ?",
+            "user id": 95843178,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": 1,
+            "children": [],
+            "content": "@ffsangela I saw it on tumblr so I thought I would share it, as I said better safe than sorry",
+            "user id": 548203324,
+            "user name": "",
+            "stance_label": 1,
+            "state": 0,
+            "hop": 2
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 1,
+            "state_1": 1
+        },
+        "2-hop": {
+            "state_0": 1,
+            "state_1": 0
+        }
+    }
+}

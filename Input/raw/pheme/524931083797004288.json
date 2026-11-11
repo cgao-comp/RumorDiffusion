@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "Prime Minister Stephen Harper is safe and has left Parliament Hill, spokesman says - @CBCAlerts https://t.co/wCqPcyqMxK",
+        "user id": 6017542,
+        "tweet id": "524931083797004288",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "“@BreakingNews: Prime Minister Stephen Harper is safe and has left Parliament Hill, spokesman says - @CBCAlerts https://t.co/geOPU5WDN7”",
+            "user id": 148516959,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "@BreakingNews @CBCAlerts You're always the breaker of bad news...",
+            "user id": 171143543,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "@BreakingNews @MichaelJMo @CBCAlerts So, the captain never intended to go down with the ship?  Where's the leadership?  Did he know?",
+            "user id": 1058370912,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 2,
+            "state_1": 1
+        }
+    }
+}

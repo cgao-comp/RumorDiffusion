@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "All Ottawa police stations are closed. University of Ottawa in lockdown. Campus closed.",
+        "user id": 413279505,
+        "tweet id": "524943504192311296",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "@ClaudiaCTV @ctvottawa classrooms are but buildings aren't?",
+            "user id": 239734612,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "“@ClaudiaCTV: All Ottawa police stations are closed. University of Ottawa in lockdown. Campus closed.”",
+            "user id": 407172507,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "“@ClaudiaCTV: All Ottawa police stations are closed. University of Ottawa in lockdown. Campus closed.” #OHSTF",
+            "user id": 2803886515,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 2,
+            "state_1": 1
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "BREAKING: 10 reportedly shot dead at Paris HQ of French weekly Charlie Hebdo http://t.co/5F1DOwzoCQ",
+        "user id": 16973333,
+        "tweet id": "552785375161499649",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "@Independent How dreadful.",
+            "user id": 18770158,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "Nowhere is safe anymore? \"@independent",
+            "user id": 593253537,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "@Independent why does one feel that this may have something to so with freedom of speech - http://t.co/Uhe5VimATk",
+            "user id": 1610238266,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 2,
+            "state_1": 1
+        }
+    }
+}

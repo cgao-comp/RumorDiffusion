@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": ".@USEmbassyFrance changes its avatar on Twitter to \"Je Suis Charlie\" after attack on #CharlieHebdo. http://t.co/zX8Faxp0Zm",
+        "user id": 16827148,
+        "tweet id": "552841583251701761",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "@ChristopherJM @EliotHiggins @USEmbassyFrance they should add this http://t.co/PiMooR8ITf",
+            "user id": 2877276800,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "@ChristopherJM @AdrienneVogt @USEmbassyFrance बिर्षन चाहन्छु म झन् आउँछ याद ।\nhttp://t.co/9pDBXOA3nX",
+            "user id": 2958040988,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "Or not @bklapperAP. MT @ChristopherJM: .@USEmbassyFrance changes its avatar on Twitter to \"Je Suis Charlie\" http://t.co/aeMgTbxekd",
+            "user id": 14745776,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 3,
+            "state_1": 0
+        }
+    }
+}

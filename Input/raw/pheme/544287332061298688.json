@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "DO NOT TWEET POLICE MOVEMENTS. Don't tweet photos of police, their faces, their location, anything. Seriously. It's simple #sydneysiege",
+        "user id": 123746182,
+        "tweet id": "544287332061298688",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "@AmberPickette I'm baffled by people and tv crews actually talking and showing pics of where police are.",
+            "user id": 187708988,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "@AmberPickette media 'should' know this.",
+            "user id": 487248935,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "@AmberPickette why twitter and  social media needs to be removed,also its a tool to radicalize folks...",
+            "user id": 105604602,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 2,
+            "state_1": 1
+        }
+    }
+}

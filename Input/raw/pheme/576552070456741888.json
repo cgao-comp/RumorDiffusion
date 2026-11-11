@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "Oleg Shro of Novy Region claims to have source saying coup under way, Putin dead, Shoigu in charge, UNVERIFIED https://t.co/h93akdhm3P",
+        "user id": 11707152,
+        "tweet id": "576552070456741888",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "@catfitz reading comments on that link is interesting .looks like locals suspect a coup, and are commenting that released videos/pix are old",
+            "user id": 785949679,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "@catfitz @carlottagall Not sure this information is credible. I think putting is having some cosmetic surgery, a bit of nip&amp;tuck, that's all",
+            "user id": 590344219,
+            "user name": "",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "@catfitz After the state coup from #Kremlin insiders (see #Nemzow killing) Putin will clean the state. Military on alert!",
+            "user id": 2553154040,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 1,
+            "state_1": 2
+        }
+    }
+}

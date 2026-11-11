@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "2 new victims en route to Ottawa hospital; 1 shot, both non-life-threatening, hospital says - @MICHAELCTV, @CBCNews https://t.co/wCqPcyqMxK",
+        "user id": 6017542,
+        "tweet id": "524961908903149568",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "@BreakingNews @MICHAELCTV @CBCNews has terrorism came to Canada",
+            "user id": 23655847,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "@BreakingNews @MICHAELCTV @CBCNews God keep you all safe.Pray this deranged psychos are caught soonest.",
+            "user id": 617434038,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "@BreakingNews @MICHAELCTV @CBCNews omg 😞",
+            "user id": 42388054,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 3,
+            "state_1": 0
+        }
+    }
+}

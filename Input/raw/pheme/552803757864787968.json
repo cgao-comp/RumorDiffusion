@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "Freedom of speech is a right as much as a cause worth fighting for. Obscurantism is a danger made real today #CharlieHebdo",
+        "user id": 1851229334,
+        "tweet id": "552803757864787968",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "@jean_jullien Well said! How can a society flourish without freedom of expression? #art #artists #CharlieHebdo",
+            "user id": 397836878,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "“@jean_jullien: Freedom of speech is a right as much as a cause worth fighting for. Obscurantism is a danger made real today #CharlieHebdo”",
+            "user id": 1343988523,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "@jean_jullien",
+            "user id": 41532810,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 3,
+            "state_1": 0
+        }
+    }
+}

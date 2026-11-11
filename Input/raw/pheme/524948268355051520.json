@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "BREAKING: @ctvottawa CONFIRMS: One shooter dead.  Police working under assumption more than one shooter.  3 shooting incidents #ottnews",
+        "user id": 55011262,
+        "tweet id": "524948268355051520",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "@CatherineCTV @DenVan @ctvottawa  Hump Day Halfway There, Rock it!",
+            "user id": 17520649,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "@CatherineCTV @JSB_FOX @ctvottawa be safe Canada.",
+            "user id": 1270271011,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "@CatherineCTV @bruce_arthur @ctvottawa Still can't believe it.",
+            "user id": 30408929,
+            "user name": "",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 3,
+            "state_1": 0
+        }
+    }
+}
