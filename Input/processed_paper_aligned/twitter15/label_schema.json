@@ -1,0 +1,20 @@
+{
+  "allowed": [
+    "true",
+    "false",
+    "unverified",
+    "non-rumor"
+  ],
+  "dataset": "twitter15",
+  "mapping": {
+    "false": 2,
+    "non-rumor": 0,
+    "true": 1,
+    "unverified": 3
+  },
+  "mapping_sha256": "79abf9fd587ee3b6dfdfaadbf718ea3662fa539d300969a4c3895425cef57472",
+  "num_classes": 4,
+  "numeric": false,
+  "schema_version": "1",
+  "skip_unknown": true
+}
