@@ -1,0 +1,60 @@
+{
+    "source": {
+        "content": "【李克强谈中国公民在马里劫持事件中遇害】向我遇难人员家属表示深切慰问，要求有关部门妥善做好相关后续工作，切实加强我驻外机构和企业安全防范措施，保护好我在外人员的安全。http://t.cn/RUuKSSl",
+        "user id": 1618051664,
+        "tweet id": "3911633284223848",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "这发个头条新闻干嘛...有意义吗？",
+            "user id": 1351608130,
+            "user name": "盖建义",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "#中国第三方支付#",
+            "user id": 3123469291,
+            "user name": "河南金令宝",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "【李克强谈中国公民在马里劫持事件中遇害】向我遇难人员家属表示深切慰问，要求有关部门妥善做好相关后续工作，切实加强我驻外机构和企业安全防范措施，保护好我在外人员的安全",
+            "user id": 5290340187,
+            "user name": "广州市岛田Ggirl品牌女包",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 3,
+            "parent": -1,
+            "children": [],
+            "content": "转发微博",
+            "user id": 5174049983,
+            "user name": "清风经开京航",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 4,
+            "state_1": 0
+        }
+    }
+}

@@ -1,0 +1,88 @@
+{
+    "source": {
+        "content": "忍者QS：江苏省东海县女镇党委书记徐艳，因不愿陪县委书记关永健上床，竟然被警察毒打致子宫破裂。徐艳一怒揭开6亿贪污大案---东海县石梁河水库水淹地补偿款案，县委书记关永健一个人竟贪污6亿多元。关永健每年搞全县科级干部大调整，仅此每年受贿2000万以上。--转自人网 http://t.cn/zjKyD4R",
+        "user id": 1603208240,
+        "tweet id": "3630121455811585",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [
+                4
+            ],
+            "content": "转发微博",
+            "user id": 1842240877,
+            "user name": "巡视团团长",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "权力就是赚钱的机械没错！一分权一分利，",
+            "user id": 1786101111,
+            "user name": "每日微评",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "所以这个县才穷嘛，用物理学解释就是。下面越穷政府投入越大，可腐败的资金就越多，何乐而不为",
+            "user id": 2232423555,
+            "user name": "人间惆怅客1116",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 3,
+            "parent": -1,
+            "children": [],
+            "content": "转发微博",
+            "user id": 1677807163,
+            "user name": "中国PE行业",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 4,
+            "parent": 0,
+            "children": [],
+            "content": "6亿啊？！",
+            "user id": 1462671265,
+            "user name": "闷骚惊天下",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 2
+        },
+        {
+            "comment id": 5,
+            "parent": -1,
+            "children": [],
+            "content": "子宫破裂似乎只有孕妇才能得，这个值得怀疑",
+            "user id": 1720756720,
+            "user name": "菠萝蜜糯夫",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 4,
+            "state_1": 1
+        },
+        "2-hop": {
+            "state_0": 1,
+            "state_1": 0
+        }
+    }
+}

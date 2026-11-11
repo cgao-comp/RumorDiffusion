@@ -1,0 +1,71 @@
+{
+    "source": {
+        "content": "有些痛，忍忍就过了，有些麻烦，忍忍就解决了，有些话，忍忍就不想说了，有些爱，忍忍就不想爱了，有些人，忍忍就不想等了。",
+        "user id": 1130677950,
+        "tweet id": "3909125484148394",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "Repost",
+            "user id": 2339727977,
+            "user name": "枪硬情浓d",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "有些痛，忍忍就过了，有些麻烦，忍忍就解决了，有些话，忍忍就不想说了，有些爱，忍忍就不想爱了，有些人，忍忍就不想等了。",
+            "user id": 3122533117,
+            "user name": "摆渡-居士",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "转发微博",
+            "user id": 2265002154,
+            "user name": "薛紫橙",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 3,
+            "parent": -1,
+            "children": [],
+            "content": "#猎火者小说##猎火英雄#",
+            "user id": 3097693181,
+            "user name": "大太阳王梦凡",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 4,
+            "parent": -1,
+            "children": [],
+            "content": "[心]",
+            "user id": 2644514053,
+            "user name": "爱-特儿",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 5,
+            "state_1": 0
+        }
+    }
+}

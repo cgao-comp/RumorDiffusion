@@ -1,0 +1,82 @@
+{
+    "source": {
+        "content": "【县招办失职，谁为李盟盟主持公道？】李盟盟，21岁，河南开封县陈留四中学生，今年高考565分。因县招办失职把她的志愿申请锁在柜子忘了提交，造成任何大学都上不成。河南省高招办回应，此事不予处理！李盟盟是农村孩子，为供其上学妹妹辍学打工，父亲打工摔断了腿。你的一次转发也许就能帮她改变命运",
+        "user id": 1242567051,
+        "tweet id": "3602269863635520",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "转发微博！",
+            "user id": 1043746025,
+            "user name": "李春天的春夏秋冬",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": " 转发微博",
+            "user id": 1714974280,
+            "user name": "扭曲的小时代go",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": " 转发微博",
+            "user id": 3494752644,
+            "user name": "shujiha2020209715",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 3,
+            "parent": -1,
+            "children": [],
+            "content": "曹！孩子早毕业了！穿越了吧你！哪年的！还传！",
+            "user id": 2437075287,
+            "user name": "草木春秋517",
+            "stance_label": 1,
+            "state": 1,
+            "hop": 1
+        },
+        {
+            "comment id": 4,
+            "parent": -1,
+            "children": [],
+            "content": "很久之前看到过这个事件，现在还没解决掉？为参加高考的寒门学子转。",
+            "user id": 1889544361,
+            "user name": "张韧",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 5,
+            "parent": -1,
+            "children": [],
+            "content": "转。讨还公道！！",
+            "user id": 2351530621,
+            "user name": "咆哮帝匆匆",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 5,
+            "state_1": 1
+        }
+    }
+}

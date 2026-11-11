@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "【胡耀邦诞辰100周年】1915年11月20日，胡耀邦出生于湖南浏阳。除了曾担任中共中央主席、中共中央总书记，改革者胡耀邦还是一个丈夫、一个父亲、一个慈祥的老爷爷，一个热爱家乡、喜欢读书、性格直率的鲜活的人。胡耀邦的24个人生角色：http://t.cn/RUEr0d9 (新浪新闻出品)",
+        "user id": 1618051664,
+        "tweet id": "3911180017645937",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "奉新华林胡氏的荣耀！",
+            "user id": 2937114122,
+            "user name": "奉新资讯",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "你心中装着人民",
+            "user id": 1065093430,
+            "user name": "位之城",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "伟大的共产主义践行者",
+            "user id": 5754564995,
+            "user name": "南师大电自院学生总支",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 3,
+            "state_1": 0
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "男人对女人的伤害，不一定是他爱上了别人，而是在她有所期待的时候让她失望，在她脆弱的时候没有给她应有的安慰....",
+        "user id": 2624324155,
+        "tweet id": "3680560520118168",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "很失望",
+            "user id": 3317703983,
+            "user name": "手机用户3317703983",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "转发微博",
+            "user id": 3693904507,
+            "user name": "蕞衣坊",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "转发微博",
+            "user id": 3949549683,
+            "user name": "李倩倩26",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 3,
+            "state_1": 0
+        }
+    }
+}

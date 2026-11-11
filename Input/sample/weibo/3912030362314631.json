@@ -1,0 +1,49 @@
+{
+    "source": {
+        "content": "有时候突然就不想工作了，有时候会突然想要喝几杯，有时候会想要独自旅行，有时候就想结婚了……我们的脑子里有那么多的念头，可是仅仅只是想想而已。或许我们真的需要一些勇气，为一些突然蹦出的念头而尝试一下。也许，它会带给你惊喜。",
+        "user id": 2703907413,
+        "tweet id": "3912030362314631",
+        "label": 0
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [],
+            "content": "或许，可以试试",
+            "user id": 5249681088,
+            "user name": "零尘不落",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": -1,
+            "children": [],
+            "content": "突然……",
+            "user id": 5582706778,
+            "user name": "胡萝卜丝1993",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 2,
+            "parent": -1,
+            "children": [],
+            "content": "是啊    各种突然想起的事有很多",
+            "user id": 5155048858,
+            "user name": "enkar1016",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 3,
+            "state_1": 0
+        }
+    }
+}

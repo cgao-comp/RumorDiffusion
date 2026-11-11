@@ -1,0 +1,102 @@
+{
+    "source": {
+        "content": "捡到粗心小朋友的高考准考证，谁认识通知下，别耽误了高考大事。   白娅倩   考点庆一中    考场013     座号11     准考证号204101311／请大家帮忙互相转发，别耽误了孩子高考！联系电话138-3046-8131 ，谢谢！  马上就要高考了[抓狂][抓狂][抓狂]",
+        "user id": 1829086453,
+        "tweet id": "3585893346832794",
+        "label": 1
+    },
+    "comment": [
+        {
+            "comment id": 0,
+            "parent": -1,
+            "children": [
+                1,
+                2
+            ],
+            "content": "@高考直通车 帮扩，后天考试了",
+            "user id": 2067934675,
+            "user name": "________XX________",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 1,
+            "parent": 0,
+            "children": [],
+            "content": "",
+            "user id": 1768089711,
+            "user name": "haohaobabyhyuk",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 2
+        },
+        {
+            "comment id": 2,
+            "parent": 0,
+            "children": [],
+            "content": "",
+            "user id": 1763755585,
+            "user name": "冷场冷场冷大场",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 2
+        },
+        {
+            "comment id": 3,
+            "parent": -1,
+            "children": [],
+            "content": "@央视新闻 @中国新闻网 @作业本",
+            "user id": 1957225141,
+            "user name": "铉不铉钟铉最炫",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 4,
+            "parent": -1,
+            "children": [],
+            "content": "这可是大事",
+            "user id": 1809589953,
+            "user name": "快到我碗裡來金琬琬_Q島",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 5,
+            "parent": -1,
+            "children": [
+                6
+            ],
+            "content": "这个不是小事啊，明天高考了吧？！！！！！扩！！！！！！",
+            "user id": 3172616702,
+            "user name": "萌兴_大雨荷畔的夏明湖",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 1
+        },
+        {
+            "comment id": 6,
+            "parent": 5,
+            "children": [],
+            "content": "",
+            "user id": 2581431422,
+            "user name": "木顺啦",
+            "stance_label": 0,
+            "state": 0,
+            "hop": 2
+        }
+    ],
+    "state": {
+        "1-hop": {
+            "state_0": 4,
+            "state_1": 0
+        },
+        "2-hop": {
+            "state_0": 3,
+            "state_1": 0
+        }
+    }
+}
