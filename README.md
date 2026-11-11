@@ -374,6 +374,7 @@ If you find **RumorDiffusion** or this repository useful in your research, pleas
   title   = {Prefix-Conditioned Diffusion for Early Rumor Detection Under Sparse and Incomplete Social Cascades},
   journal = {ACM Transactions on Intelligent Systems and Technology (TIST)},
   year    = {2026},
+doi = {10.1145/3861011},
   note    = {Accepted for publication}
 }
 
