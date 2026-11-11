@@ -1,0 +1,168 @@
+{
+  "early_confident": {
+    "source_id": "688757736310484994",
+    "label": 0,
+    "label_binary": 0,
+    "earliest_accept_minutes": 10,
+    "trace": [
+      {
+        "obs_minutes": 10,
+        "pred_class": 0,
+        "pred_prob": 0.9990234375,
+        "pred_var": 0.0,
+        "rumor_prob": 0.001209259033203125,
+        "rumor_var": 0.0,
+        "decision": "accept_non_rumor",
+        "accepted_label": "non-rumor",
+        "accepted_binary": 0,
+        "label_binary": 0,
+        "decision_correct": 1,
+        "probs": [
+          0.9990234375,
+          0.0004153251647949219,
+          0.00028443336486816406,
+          0.0005097389221191406
+        ],
+        "vars": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "obs_minutes": 20,
+        "pred_class": 0,
+        "pred_prob": 0.9990234375,
+        "pred_var": 0.0,
+        "rumor_prob": 0.0011281967163085938,
+        "rumor_var": 0.0,
+        "decision": "accept_non_rumor",
+        "accepted_label": "non-rumor",
+        "accepted_binary": 0,
+        "label_binary": 0,
+        "decision_correct": 1,
+        "probs": [
+          0.9990234375,
+          0.0003962516784667969,
+          0.0002639293670654297,
+          0.0004680156707763672
+        ],
+        "vars": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "obs_minutes": 30,
+        "pred_class": 0,
+        "pred_prob": 0.9990234375,
+        "pred_var": 0.0,
+        "rumor_prob": 0.0011348724365234375,
+        "rumor_var": 0.0,
+        "decision": "accept_non_rumor",
+        "accepted_label": "non-rumor",
+        "accepted_binary": 0,
+        "label_binary": 0,
+        "decision_correct": 1,
+        "probs": [
+          0.9990234375,
+          0.0003979206085205078,
+          0.0002651214599609375,
+          0.0004715919494628906
+        ],
+        "vars": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ]
+  },
+  "deferred": {
+    "source_id": "690920430287331328",
+    "label": 0,
+    "label_binary": 0,
+    "earliest_accept_minutes": 30,
+    "trace": [
+      {
+        "obs_minutes": 10,
+        "pred_class": 2,
+        "pred_prob": 0.5537109375,
+        "pred_var": 0.0,
+        "rumor_prob": 0.681640625,
+        "rumor_var": 0.0,
+        "decision": "defer",
+        "accepted_label": "defer",
+        "accepted_binary": -1,
+        "label_binary": 0,
+        "decision_correct": -1,
+        "probs": [
+          0.31787109375,
+          0.038238525390625,
+          0.5537109375,
+          0.08984375
+        ],
+        "vars": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "obs_minutes": 20,
+        "pred_class": 0,
+        "pred_prob": 0.68701171875,
+        "pred_var": 0.0,
+        "rumor_prob": 0.31298828125,
+        "rumor_var": 0.0,
+        "decision": "defer",
+        "accepted_label": "defer",
+        "accepted_binary": -1,
+        "label_binary": 0,
+        "decision_correct": -1,
+        "probs": [
+          0.68701171875,
+          0.020660400390625,
+          0.22802734375,
+          0.0643310546875
+        ],
+        "vars": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "obs_minutes": 30,
+        "pred_class": 0,
+        "pred_prob": 0.873046875,
+        "pred_var": 0.0,
+        "rumor_prob": 0.127197265625,
+        "rumor_var": 0.0,
+        "decision": "accept_non_rumor",
+        "accepted_label": "non-rumor",
+        "accepted_binary": 0,
+        "label_binary": 0,
+        "decision_correct": 1,
+        "probs": [
+          0.873046875,
+          0.00714874267578125,
+          0.073486328125,
+          0.046539306640625
+        ],
+        "vars": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ]
+  }
+}

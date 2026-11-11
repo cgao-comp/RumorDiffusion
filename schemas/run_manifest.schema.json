@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RumorDiffusion canonical run manifest",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schema_version", "run_id", "status", "dataset", "split", "horizon",
+    "model", "resolved_config", "code", "checkpoint", "predictions", "metrics",
+    "seeds", "calibration_tag", "sampling_S"
+  ],
+  "properties": {
+    "schema_version": {"type": "string", "enum": ["1", "2"]},
+    "run_id": {"type": "string", "pattern": "^[a-zA-Z0-9._-]+$"},
+    "status": {"type": "string", "enum": ["running", "validated", "failed"]},
+    "dataset": {"type": "string", "enum": ["twitter15", "twitter16", "weibo", "pheme"]},
+    "split": {"type": "string", "enum": ["train", "val", "test"]},
+    "horizon": {
+      "type": "object",
+      "required": ["value", "unit"],
+      "properties": {
+        "value": {"type": "number", "exclusiveMinimum": 0},
+        "unit": {"type": "string", "enum": ["minutes", "hop", "count"]}
+      }
+    },
+    "model": {"type": "object", "required": ["name", "variant"]},
+    "resolved_config": {"type": "object", "required": ["path", "sha256", "payload"]},
+    "code": {"type": "object", "required": ["git_commit", "dirty", "dirty_diff_sha256"]},
+    "checkpoint": {"type": "object", "required": ["path", "sha256", "metadata"]},
+    "predictions": {"type": "object", "required": ["path", "sha256", "schema_version"]},
+    "metrics": {"type": "object", "required": ["path", "sha256", "command"]},
+    "environment": {"type": "object", "required": ["path", "sha256", "schema_version"]},
+    "raw_manifest": {"type": "object", "required": ["path", "sha256", "schema_version"]},
+    "processed_manifest": {"type": "object", "required": ["path", "sha256", "schema_version"]},
+    "split_manifest": {"type": "object", "required": ["path", "sha256", "schema_version"]},
+    "calibration": {"type": "object", "required": ["path", "sha256", "schema_version"]},
+    "selective_metrics": {"type": "object", "required": ["path", "sha256", "schema_version"]},
+    "latency": {"type": "object", "required": ["path", "sha256", "schema_version"]},
+    "execution": {"type": "object", "required": ["start_time", "end_time", "exit_code", "command", "logs"]},
+    "seeds": {"type": "object", "required": ["split", "ctdm", "arbiter", "inference", "bootstrap", "missingness"]},
+    "calibration_tag": {"type": "string", "minLength": 1},
+    "sampling_S": {"type": "integer", "minimum": 1}
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RumorDiffusion canonical prediction row",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "run_id", "dataset", "split", "source_id", "horizon_unit", "horizon_value",
+    "model", "model_variant", "y_true", "logits", "probs_uncalibrated",
+    "probs_calibrated", "y_pred", "confidence", "uncertainty_score", "accepted",
+    "decision", "split_seed", "ctdm_seed", "arbiter_seed", "inference_seed",
+    "calibration_tag", "sampling_S", "checkpoint_sha256", "config_sha256", "split_sha256"
+  ],
+  "properties": {
+    "run_id": {"type": "string", "minLength": 1},
+    "dataset": {"type": "string"},
+    "split": {"type": "string", "enum": ["train", "val", "test"]},
+    "source_id": {"type": "string", "minLength": 1},
+    "horizon_unit": {"type": "string", "enum": ["minutes", "hop", "count"]},
+    "horizon_value": {"type": "number", "exclusiveMinimum": 0},
+    "model": {"type": "string", "minLength": 1},
+    "model_variant": {"type": "string", "minLength": 1},
+    "y_true": {"type": "integer", "minimum": 0},
+    "logits": {"type": "array", "minItems": 2, "items": {"type": "number"}},
+    "probs_uncalibrated": {"type": "array", "minItems": 2, "items": {"type": "number"}},
+    "probs_calibrated": {"type": "array", "minItems": 2, "items": {"type": "number"}},
+    "y_pred": {"type": "integer", "minimum": 0},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+    "uncertainty_score": {"type": "number", "minimum": 0},
+    "accepted": {"type": "boolean"},
+    "decision": {"type": "string", "enum": ["accept", "reject"]},
+    "split_seed": {"type": "integer"},
+    "ctdm_seed": {"type": "integer"},
+    "arbiter_seed": {"type": "integer"},
+    "inference_seed": {"type": "integer"},
+    "calibration_tag": {"type": "string", "minLength": 1},
+    "sampling_S": {"type": "integer", "minimum": 1},
+    "compute_latency_ms": {"type": "number", "minimum": 0},
+    "checkpoint_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "config_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "split_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}
