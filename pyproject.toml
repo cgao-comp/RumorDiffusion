@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+python_files = ["test_*.py"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+exclude = ["Output", "Input", "Docs/paper/Figs"]
+
+[tool.black]
+line-length = 120
+target-version = ["py310"]
+exclude = "/(Input|Output|Docs/paper/Figs)/"
